@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Set minimum 8px border-radius on all card and container elements */
+  .card,
+  [class*="card"],
+  [class*="container-styled"] {
+    @apply rounded-card;
+  }
+
+  /* Ensure headings use the display font */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-text-dark;
+  }
+
+  /* Body text uses nunito with accessible color */
+  body {
+    @apply font-body text-text-body;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Whimsical card with rounded corners and soft shadow */
+  .whimsical-card {
+    @apply rounded-card bg-white/70 backdrop-blur-sm shadow-whimsical border border-pink-100/50 p-6;
+  }
+
+  /* Section container with padding and max-width */
+  .section-container {
+    @apply mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8;
+  }
+
+  /* Gradient text effect for headings */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-lavender-400 to-mint-400;
+  }
+
+  /* Decorative divider with sparkle */
+  .sparkle-divider {
+    @apply relative flex items-center justify-center py-4;
+  }
+
+  .sparkle-divider::before {
+    content: "✦ ✧ ✦";
+    @apply text-pink-300 text-sm tracking-[0.5em];
+  }
+}
+
+@layer utilities {
+  /* Soft gradient backgrounds */
+  .bg-pastel-gradient {
+    background: linear-gradient(135deg, #fff0f6 0%, #f8f0fc 50%, #e6fcf5 100%);
+  }
+
+  /* Floating animation for decorative elements */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Sparkle pulse for decorative stars */
+  .animate-sparkle-pulse {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+}

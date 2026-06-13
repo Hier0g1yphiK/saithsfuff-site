@@ -1,28 +1,32 @@
-# Angular specific
-/dist/
-/out-tsc/
-/tmp/
-/coverage/
-/e2e/test-output/
-/.angular/
-.angular/
-
-# Node modules and dependency files
+# Dependencies
 /node_modules/
-/package-lock.json
-/yarn.lock
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build/
 
 # Environment files
-/.env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Angular CLI and build artefacts
-/.angular-cli.json
-/.ng/
-
-# TypeScript cache
+# TypeScript
 *.tsbuildinfo
+next-env.d.ts
 
-# Logs
+# Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Misc
+.DS_Store
+*.pem
+
+# Vercel
+.vercel

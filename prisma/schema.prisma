@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model InstagramPost {
+  id           String   @id
+  mediaType    String   @map("media_type")
+  mediaUrl     String   @map("media_url")
+  thumbnailUrl String?  @map("thumbnail_url")
+  permalink    String
+  caption      String?
+  postedAt     DateTime @map("posted_at")
+  cachedAt     DateTime @default(now()) @map("cached_at")
+  isActive     Boolean  @default(true) @map("is_active")
+
+  @@map("instagram_posts")
+}
+
+model TikTokVideo {
+  id           String   @id
+  title        String
+  thumbnailUrl String   @map("thumbnail_url")
+  videoUrl     String   @map("video_url")
+  permalink    String
+  createdAt    DateTime @map("created_at")
+  cachedAt     DateTime @default(now()) @map("cached_at")
+  isActive     Boolean  @default(true) @map("is_active")
+
+  @@map("tiktok_videos")
+}
+
+model SiteConfig {
+  key   String @id
+  value String
+
+  @@map("site_config")
+}
