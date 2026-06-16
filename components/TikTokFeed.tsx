@@ -12,11 +12,12 @@ export default function TikTokFeed() {
       </h2>
 
       <div className="whimsical-card p-4 sm:p-6">
-        <div id="curator-feed-default-feed-layout">
-          <a href="https://curator.io" target="_blank" rel="noopener noreferrer" className="crt-logo crt-tag">
-            Powered by Curator.io
-          </a>
-        </div>
+        <div
+          className="tagembed-widget"
+          style={{ width: "100%", height: "100%", overflow: "auto" }}
+          data-widget-id="328133"
+          data-website="1"
+        />
       </div>
 
       <div className="text-center mt-8">
@@ -31,7 +32,7 @@ export default function TikTokFeed() {
       </div>
 
       <Script
-        src="https://cdn.curator.io/published/a8162826-eb1b-403b-bfc7-e5dce84fbae8.js"
+        src="https://widget.tagembed.com/embed.min.js"
         strategy="lazyOnload"
       />
     </section>
