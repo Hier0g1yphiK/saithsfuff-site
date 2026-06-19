@@ -3,11 +3,8 @@
     {
       "name": "Default",
       "files": [
-        "tailwind.config.ts",
-        ".vscode/changelists.json",
         "components/home/TikTokFeed.tsx",
-        "prisma/schema.prisma",
-        "next.config.js"
+        ".vscode/changelists.json"
       ]
     }
   ],

@@ -14,7 +14,7 @@ export default function TikTokFeed() {
       <div className="whimsical-card p-4 sm:p-6">
         <iframe
           src="https://app.mirror-app.com/feed-tiktok/6ac0e699-5804-400e-9e4c-02d1cab8aabb/preview"
-          style={{ width: "100%", border: "none", overflow: "visible" }}
+          style={{ width: "100%", minHeight: "500px", border: "none", overflow: "hidden" }}
           title="TikTok Feed"
         ></iframe>
       </div>
