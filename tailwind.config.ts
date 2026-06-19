@@ -76,9 +76,9 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-whimsical":
-          "linear-gradient(135deg, #fff0f6 0%, #f8f0fc 50%, #e6fcf5 100%)",
+          "linear-gradient(135deg, #fff0f6 0%, #f8f0fc 50%, #ffedd5 100%)",
         "gradient-hero":
-          "linear-gradient(180deg, #fff0f6 0%, #f3d9fa 40%, #c3fae8 100%)",
+          "linear-gradient(180deg, #fff0f6 0%, #f3d9fa 40%, #ffedd5 100%)",
         "gradient-card":
           "linear-gradient(135deg, #ffffff 0%, #fff0f6 50%, #f8f0fc 100%)",
       },

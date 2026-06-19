@@ -9,19 +9,6 @@ datasource db {
   provider = "postgresql"
 }
 
-model TikTokVideo {
-  id           String   @id
-  title        String
-  thumbnailUrl String   @map("thumbnail_url")
-  videoUrl     String   @map("video_url")
-  permalink    String
-  createdAt    DateTime @map("created_at")
-  cachedAt     DateTime @default(now()) @map("cached_at")
-  isActive     Boolean  @default(true) @map("is_active")
-
-  @@map("tiktok_videos")
-}
-
 model SiteConfig {
   key   String @id
   value String

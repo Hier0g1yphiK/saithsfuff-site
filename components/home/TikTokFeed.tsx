@@ -12,12 +12,11 @@ export default function TikTokFeed() {
       </h2>
 
       <div className="whimsical-card p-4 sm:p-6">
-        <div
-          className="tagembed-widget"
-          style={{ width: "100%", height: "100%", overflow: "auto" }}
-          data-widget-id="328133"
-          data-website="1"
-        />
+        <iframe
+          src="https://app.mirror-app.com/feed-tiktok/6ac0e699-5804-400e-9e4c-02d1cab8aabb/preview"
+          style={{ width: "100%", border: "none", overflow: "visible" }}
+          title="TikTok Feed"
+        ></iframe>
       </div>
 
       <div className="text-center mt-8">
@@ -32,7 +31,7 @@ export default function TikTokFeed() {
       </div>
 
       <Script
-        src="https://widget.tagembed.com/embed.min.js"
+        src="https://cdn.jsdelivr.net/npm/@mirrorapp/iframe-bridge@latest/dist/index.umd.js"
         strategy="lazyOnload"
       />
     </section>
