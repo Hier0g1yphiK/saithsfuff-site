@@ -3,8 +3,7 @@
     {
       "name": "Default",
       "files": [
-        "components/home/TikTokFeed.tsx",
-        ".vscode/changelists.json"
+        "next.config.js"
       ]
     }
   ],
