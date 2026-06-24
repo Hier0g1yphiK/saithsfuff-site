@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Security Review",
+  "description": "Reviews changed files for potential security issues including API keys, tokens, credentials, private keys, encryption keys, authentication tokens, passwords, IP addresses, hardcoded internal URLs, and database connection credentials. Highlights risks, suggests secure alternatives, and recommends best practices.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the changed file for potential security issues. Specifically check for:\n1. API keys, tokens, or credentials in source code\n2. Private keys or sensitive credentials\n3. Encryption keys or certificates\n4. Authentication tokens or session IDs\n5. Passwords or secrets in configuration files\n6. IP addresses containing sensitive data\n7. Hardcoded internal URLs\n8. Database connection credentials\n\nFor each issue found:\n1. Highlight the specific security risk\n2. Suggest a secure alternative approach (e.g., environment variables, secret managers)\n3. Recommend security best practices\n\nIf no issues are found, confirm the file appears clean from a secrets/credentials perspective."
+  }
+}

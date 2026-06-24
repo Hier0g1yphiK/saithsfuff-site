@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Generate File Documentation",
+  "description": "When triggered, generates comprehensive documentation for the current file: extracts function and class signatures, documents parameters and return types, provides usage examples based on existing code, updates README.md with new exports, and ensures documentation follows project standards.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Generate comprehensive documentation for the current active file:\n1. Extract all function and class signatures from the file\n2. Document all parameters and return types with descriptions\n3. Provide usage examples based on how the exports are used in the existing codebase\n4. Update README.md with any new exports from this file\n5. Ensure all documentation follows the project's conventions and standards defined in .kiro/steering files\n\nOutput the documentation as JSDoc comments added directly to the source file, and update README.md if applicable."
+  }
+}
