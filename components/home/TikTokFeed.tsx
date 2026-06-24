@@ -1,10 +1,24 @@
 "use client";
 
-import Script from "next/script";
+import { useEffect } from "react";
 
 const TIKTOK_CHANNEL_URL = "https://www.tiktok.com/@saithsfuff";
+const CURATOR_SCRIPT_URL =
+  "https://cdn.curator.io/published/a8162826-eb1b-403b-bfc7-e5dce84fbae8.js";
 
 export default function TikTokFeed() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.charset = "UTF-8";
+    script.src = CURATOR_SCRIPT_URL;
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
   return (
     <section id="tiktok" className="section-container">
       <h2 className="font-display text-text-dark text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8">
@@ -12,11 +26,17 @@ export default function TikTokFeed() {
       </h2>
 
       <div className="whimsical-card p-4 sm:p-6">
-        <iframe
-          src="https://app.mirror-app.com/feed-tiktok/6ac0e699-5804-400e-9e4c-02d1cab8aabb/preview"
-          style={{ width: "100%", minHeight: "500px", border: "none", overflow: "hidden" }}
-          title="TikTok Feed"
-        ></iframe>
+        <div id="curator-feed-default-feed-layout">
+          <a
+            href="https://curator.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="crt-logo crt-tag"
+          >
+            Powered by Curator.io
+            <span className="sr-only">(opens in new tab)</span>
+          </a>
+        </div>
       </div>
 
       <div className="text-center mt-8">
@@ -27,13 +47,9 @@ export default function TikTokFeed() {
           className="inline-block font-display text-sm font-medium text-pink-500 hover:text-pink-600 transition-colors"
         >
           Visit channel →
+          <span className="sr-only">(opens in new tab)</span>
         </a>
       </div>
-
-      <Script
-        src="https://cdn.jsdelivr.net/npm/@mirrorapp/iframe-bridge@latest/dist/index.umd.js"
-        strategy="lazyOnload"
-      />
     </section>
   );
 }
