@@ -17,6 +17,7 @@ app/
   page.tsx            # Homepage (hero, Twitch embed, Instagram & TikTok feeds)
   globals.css         # Tailwind layers + custom component/utility classes
   links/page.tsx      # Links page (link-in-bio with socials & partners)
+  smp/page.tsx        # SMP page (Minecraft server info & connection guide)
   portfolio/page.tsx  # Portfolio & Media Kit page (stats, collabs, contact CTA)
   api/
     refresh-feeds/    # Cron-triggered feed cache refresh endpoint
@@ -36,6 +37,11 @@ components/
     LinkCard.tsx      # Reusable external link card (icon, name, description)
     SocialLinksSection.tsx  # Social media links list
     PartnersSection.tsx     # Partner & sponsor links list
+  smp/                # SMP page components
+    SmpHero.tsx       # Page hero with server name and tagline
+    ServerIpDisplay.tsx  # Client component — copy-to-clipboard IP display
+    JavaSection.tsx   # Java Edition connection instructions
+    BedrockSection.tsx   # Bedrock Edition connection instructions
   media-kit/          # Portfolio/media kit page components
     MediaKitHero.tsx
     PlatformStats.tsx
@@ -48,6 +54,7 @@ lib/                  # Shared utilities, data, and helpers
   constants.ts        # BASE_PATH for asset URLs
   links-data.ts       # Static link/partner data (LinkItem interface)
   media-kit-data.ts   # Media kit static data
+  smp-data.ts         # SMP page static data (SmpPageData, SmpHeroData, SmpConnectionSection)
 
 prisma/               # Database schema and migrations
   schema.prisma
