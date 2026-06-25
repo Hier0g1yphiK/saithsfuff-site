@@ -1,6 +1,15 @@
 import { partnerLinks } from "@/lib/links-data";
 import LinkCard from "./LinkCard";
 
+/**
+ * Renders the "Partners & Sponsors" section of the Links page.
+ *
+ * Iterates over the `partnerLinks` array from `lib/links-data.ts` and renders
+ * a vertically-stacked list of {@link LinkCard} components. Each card shows
+ * the partner name plus a description containing discount codes.
+ *
+ * @returns A `<section>` with an h2 heading and the partner link cards.
+ */
 export default function PartnersSection() {
   return (
     <section>

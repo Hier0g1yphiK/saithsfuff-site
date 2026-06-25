@@ -1,6 +1,15 @@
 import Image from "next/image";
 import { BASE_PATH } from "@/lib/constants";
 
+/**
+ * Homepage hero section.
+ *
+ * Displays saithsfuff's profile photo, a gradient headline, and a tagline.
+ * Uses the pastel hero gradient in light mode and a deep purple backdrop in
+ * dark mode. The profile image is loaded with `priority` for LCP optimization.
+ *
+ * @returns A `<section>` element with the hero content.
+ */
 export default function HomeHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-hero py-16 sm:py-24 dark:bg-none dark:bg-[#1a0e2e]">

@@ -8,12 +8,24 @@ import BrandCollaborations from "@/components/media-kit/BrandCollaborations";
 import ContentExamples from "@/components/media-kit/ContentExamples";
 import ContactCTA from "@/components/media-kit/ContactCTA";
 
+/** Page-level metadata for SEO and social sharing on the `/portfolio` route. */
 export const metadata: Metadata = {
   title: "Portfolio & Media Kit | saithsfuff",
   description:
     "Explore saithsfuff's media kit — platform stats, audience demographics, brand collaborations, and content examples. Let's work together!",
 };
 
+/**
+ * Portfolio & Media Kit page — the `/portfolio` route.
+ *
+ * Presents saithsfuff's media kit for potential brand partners: platform
+ * statistics, audience demographics, past collaborations, content examples,
+ * and a contact CTA. Sections are separated by sparkle dividers.
+ *
+ * This is a React Server Component (no "use client" directive).
+ *
+ * @returns The fully-rendered portfolio/media-kit page layout.
+ */
 export default function PortfolioPage() {
   return (
     <>
@@ -33,7 +45,7 @@ export default function PortfolioPage() {
         <ContactCTA />
       </main>
       <footer className="py-8 text-center font-body text-sm text-text-body">
-        <p>© 2024 saithsfuff. All rights reserved.</p>
+        <p>© 2026 saithsfuff. All rights reserved.</p>
       </footer>
     </>
   );

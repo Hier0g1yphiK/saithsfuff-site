@@ -6,12 +6,25 @@ import Link from "next/link";
 import ThemeToggle from "@/components/shared/ThemeToggle";
 import { BASE_PATH } from "@/lib/constants";
 
+/** Site-wide navigation links rendered in both desktop and mobile layouts. */
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Links", href: "/links" },
 ];
 
+/**
+ * Sticky navigation bar displayed on every page.
+ *
+ * Features:
+ * - Responsive: horizontal links on desktop, hamburger menu on mobile.
+ * - Glass-card styling with backdrop blur and theme-aware borders.
+ * - Includes the site logo, page links, and {@link ThemeToggle}.
+ *
+ * This is a Client Component (requires state for the mobile menu toggle).
+ *
+ * @returns A `<nav>` element with desktop and mobile navigation.
+ */
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

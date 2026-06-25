@@ -1,17 +1,40 @@
 import Image from "next/image";
 import { BASE_PATH } from "@/lib/constants";
 
+/**
+ * Props for the {@link LinkCard} component.
+ */
 interface LinkCardProps {
   /** Display name of the platform or partner */
   name: string;
-  /** Destination URL */
+  /** Destination URL — opens in a new tab */
   href: string;
   /** Optional description text (discount codes, invitations, etc.) */
   description?: string;
-  /** Path to the logo image (e.g. "/images/links/instagram.png") */
+  /** Path to the logo image relative to `/public` (e.g. "/images/links/instagram.png") */
   icon: string;
 }
 
+/**
+ * An external link card used on the Links page.
+ *
+ * Renders as a full-width anchor styled with the `whimsical-card` treatment.
+ * Includes an icon, platform name, optional description, hover/focus states,
+ * and screen-reader-accessible "(opens in new tab)" text.
+ *
+ * @param props - {@link LinkCardProps}
+ * @returns An `<a>` element wrapping the card content.
+ *
+ * @example
+ * ```tsx
+ * <LinkCard
+ *   name="Discord"
+ *   href="https://discord.gg/fuff"
+ *   description="Invite your friends!"
+ *   icon="/images/links/discord.png"
+ * />
+ * ```
+ */
 export default function LinkCard({ name, href, description, icon }: LinkCardProps) {
   return (
     <a

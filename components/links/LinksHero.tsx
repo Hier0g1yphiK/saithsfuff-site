@@ -1,3 +1,12 @@
+/**
+ * Hero section for the Links page.
+ *
+ * Renders a gradient-backed header with the page title ("All My Links") and a
+ * brief tagline. Matches the hero pattern used across other pages (HomeHero,
+ * MediaKitHero) with consistent spacing and dark-mode support.
+ *
+ * @returns A `<section>` element containing the h1 heading and tagline.
+ */
 export default function LinksHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-hero py-16 sm:py-24 dark:bg-none dark:bg-[#1a0e2e]">

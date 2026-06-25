@@ -13,22 +13,52 @@ Personal website for the streamer **saithsfuff** — a whimsical landing page fe
 
 ```
 app/
-  layout.tsx          # Root layout (fonts, metadata, Open Graph)
-  page.tsx            # Home page (SSR, composes all sections)
+  layout.tsx          # Root layout (fonts, metadata, theme script)
+  page.tsx            # Homepage (hero, Twitch embed, Instagram & TikTok feeds)
+  globals.css         # Tailwind layers + custom component/utility classes
+  links/page.tsx      # Links page (link-in-bio with socials & partners)
+  portfolio/page.tsx  # Portfolio & Media Kit page (stats, collabs, contact CTA)
   api/
     refresh-feeds/    # Cron-triggered feed cache refresh endpoint
+
 components/
-  NavBar.tsx          # Sticky responsive nav with hamburger menu
-  AboutSection.tsx    # Intro/bio section
-  InstagramFeed.tsx   # Instagram post grid
-  TikTokFeed.tsx      # TikTok video thumbnail grid
-lib/
-  prisma.ts           # Prisma client singleton
-  instagram.ts        # Instagram Graph API service
-  tiktok.ts           # TikTok oEmbed service
-  feeds.ts            # Database queries + feed refresh logic
-prisma/
-  schema.prisma       # Data models (InstagramPost, TikTokVideo, SiteConfig)
+  shared/             # Cross-page components
+    NavBar.tsx        # Sticky responsive nav with hamburger menu & theme toggle
+    DecorativeStars.tsx  # Fixed-position animated sparkle background
+    ThemeToggle.tsx   # Light/dark mode toggle (localStorage)
+  home/               # Homepage sections
+    HomeHero.tsx      # Profile image, headline, tagline
+    TwitchSection.tsx # Embedded Twitch player with error/loading states
+    InstagramFeed.tsx # Instagram post grid
+    TikTokFeed.tsx    # TikTok video thumbnail grid
+  links/              # Links page components
+    LinksHero.tsx     # Page title and tagline
+    LinkCard.tsx      # Reusable external link card (icon, name, description)
+    SocialLinksSection.tsx  # Social media links list
+    PartnersSection.tsx     # Partner & sponsor links list
+  media-kit/          # Portfolio/media kit page components
+    MediaKitHero.tsx
+    PlatformStats.tsx
+    AudienceDemographics.tsx
+    BrandCollaborations.tsx
+    ContentExamples.tsx
+    ContactCTA.tsx
+
+lib/                  # Shared utilities, data, and helpers
+  constants.ts        # BASE_PATH for asset URLs
+  links-data.ts       # Static link/partner data (LinkItem interface)
+  media-kit-data.ts   # Media kit static data
+
+prisma/               # Database schema and migrations
+  schema.prisma
+  migrations/
+
+public/images/        # Static assets (logos, icons, partner images)
+
+__tests__/            # Test files mirroring components/ structure
+  components/
+    home/
+    links/
 ```
 
 ## Getting Started
@@ -107,3 +137,6 @@ TikTok doesn't provide a public feed API. Videos are stored manually in the `tik
 | `npm run build` | Production build |
 | `npm run start` | Start production server |
 | `npm run lint` | Run ESLint |
+| `npm test` | Run Jest test suite |
+| `npx prisma migrate dev` | Run database migrations |
+| `npx prisma generate` | Regenerate Prisma client |

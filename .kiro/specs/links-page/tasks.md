@@ -50,7 +50,7 @@ Implement a Linktree-style links page at `/links` that displays Faith's social m
   - [x] 4.1 Create `app/links/page.tsx`
     - Export metadata with title "Links | saithsfuff" and a description ≤160 characters
     - Compose the page: DecorativeStars → NavBar → main (LinksHero, sparkle-divider, SocialLinksSection, sparkle-divider, PartnersSection) → footer
-    - Footer must match homepage footer styling: `py-8 text-center font-body text-sm text-text-body` with "© 2024 saithsfuff. All rights reserved."
+    - Footer must match homepage footer styling: `py-8 text-center font-body text-sm text-text-body` with "© 2026 saithsfuff. All rights reserved."
     - _Requirements: 1.1, 1.2, 1.4, 1.5, 2.4, 6.5, 6.6_
 
   - [x] 4.2 Add "Links" entry to NavBar navigation

@@ -1,6 +1,14 @@
 import { socialLinks } from "@/lib/links-data";
 import LinkCard from "./LinkCard";
 
+/**
+ * Renders the "Social Media" section of the Links page.
+ *
+ * Iterates over the `socialLinks` array from `lib/links-data.ts` and renders
+ * a vertically-stacked list of {@link LinkCard} components.
+ *
+ * @returns A `<section>` with an h2 heading and the social link cards.
+ */
 export default function SocialLinksSection() {
   return (
     <section>
