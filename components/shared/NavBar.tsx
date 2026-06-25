@@ -10,8 +10,8 @@ import { BASE_PATH } from "@/lib/constants";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Links", href: "/links" },
   { label: "SMP", href: "/smp" },
+  { label: "Links", href: "/links" },
 ];
 
 /**
