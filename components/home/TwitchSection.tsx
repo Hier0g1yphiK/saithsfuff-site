@@ -32,7 +32,7 @@ export default function TwitchSection() {
         channel: TWITCH_CHANNEL,
         width: "100%",
         height: "100%",
-        layout: "video-with-chat",
+        layout: "video",
         parent: [window.location.hostname],
         autoplay: false,
         muted: true,

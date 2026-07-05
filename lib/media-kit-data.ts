@@ -110,10 +110,10 @@ export const contentExamples: ContentExample[] = [
 
 /** Contact information — replace with real details */
 export const contactInfo: ContactInfo = {
-  email: "collabs@saithsfuff.example",
+  email: "saithsfuff@gmail.com",
   socialLinks: [
-    { platform: "Twitch", url: "#", label: "twitch.tv/saithsfuff" },
-    { platform: "Instagram", url: "#", label: "@saithsfuff" },
-    { platform: "TikTok", url: "#", label: "@saithsfuff" },
+    { platform: "Twitch", url: "https://twitch.tv/saithsfuff", label: "twitch.tv/saithsfuff" },
+    { platform: "Instagram", url: "https://www.instagram.com/saithsfuff/", label: "instagram.com/saithsfuff/" },
+    { platform: "TikTok", url: "https://www.tiktok.com/@saithsfuff", label: "tiktok.com/@saithsfuff" },
   ],
 };
