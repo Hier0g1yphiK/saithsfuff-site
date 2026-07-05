@@ -48,9 +48,9 @@ describe("SmpHero", () => {
     expect(section).toHaveClass("bg-gradient-hero");
   });
 
-  it("uses section-container class for content wrapper", () => {
+  it("uses a centered content wrapper with max-w-4xl", () => {
     const { container } = render(<SmpHero />);
-    const wrapper = container.querySelector(".section-container");
+    const wrapper = container.querySelector(".mx-auto.max-w-4xl");
     expect(wrapper).toBeInTheDocument();
   });
 

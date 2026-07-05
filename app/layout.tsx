@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
+import PasswordGate from "@/components/shared/PasswordGate";
 
 const isProd = process.env.NODE_ENV === 'production';
 const basePath = isProd ? '/saithsfuff-site' : '';
@@ -64,7 +65,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body text-text-body bg-gradient-whimsical min-h-screen antialiased transition-colors duration-300 dark:bg-none dark:bg-[#1a0e2e]">
-        {children}
+        <PasswordGate>{children}</PasswordGate>
       </body>
     </html>
   );

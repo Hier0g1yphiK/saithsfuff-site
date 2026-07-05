@@ -34,11 +34,11 @@ describe('LinkCard', () => {
       expect(screen.getByText('Instagram')).toBeInTheDocument()
     })
 
-    it('applies truncation classes to the name element', () => {
+    it('applies display classes to the name element', () => {
       render(<LinkCard {...defaultProps} />)
       const nameEl = screen.getByText('Instagram')
-      expect(nameEl).toHaveClass('truncate')
-      expect(nameEl).toHaveClass('max-w-[50ch]')
+      expect(nameEl).toHaveClass('font-display')
+      expect(nameEl).toHaveClass('text-center')
     })
   })
 
