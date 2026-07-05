@@ -34,6 +34,8 @@ export default function PortfolioPage() {
       <main>
         <MediaKitHero />
         <div className="sparkle-divider" />
+        <ContactCTA />
+        <div className="sparkle-divider" />
         <PlatformStats />
         <div className="sparkle-divider" />
         <AudienceDemographics />
@@ -41,8 +43,6 @@ export default function PortfolioPage() {
         <BrandCollaborations />
         <div className="sparkle-divider" />
         <ContentExamples />
-        <div className="sparkle-divider" />
-        <ContactCTA />
       </main>
       <footer className="py-8 text-center font-body text-sm text-text-body">
         <p>© 2026 saithsfuff. All rights reserved.</p>
