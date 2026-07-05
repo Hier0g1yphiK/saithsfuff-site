@@ -7,7 +7,7 @@ Personal website for the streamer **saithsfuff** — a whimsical landing page fe
 - **Frontend:** React + Next.js (App Router, Server Components)
 - **Styling:** Tailwind CSS with custom whimsical theme (pastels, rounded corners, sparkles)
 - **Database:** PostgreSQL via Prisma ORM
-- **APIs:** Instagram Graph API, TikTok oEmbed API
+- **APIs:** Curator.io (Instagram & TikTok feeds), TikTok oEmbed API
 
 ## Project Structure
 
@@ -106,7 +106,6 @@ The site will be available at [http://localhost:3000](http://localhost:3000).
 | Variable | Description |
 |----------|-------------|
 | `DATABASE_URL` | PostgreSQL connection string |
-| `INSTAGRAM_ACCESS_TOKEN` | Long-lived Instagram Graph API token |
 | `REFRESH_API_KEY` | Secret key for the feed refresh endpoint |
 
 ## Feed Refresh
@@ -120,17 +119,9 @@ curl -X POST http://localhost:3000/api/refresh-feeds \
 
 In production, set up a cron job (Vercel Cron, GitHub Actions, etc.) to call this every 30 minutes.
 
-## Instagram Token Setup
+## Social Feeds (Curator.io)
 
-1. Create a Meta developer app at [developers.facebook.com](https://developers.facebook.com)
-2. Add the Instagram Graph API product
-3. Connect the Instagram Business/Creator account to a Facebook Page
-4. Generate a short-lived token in the Graph API Explorer (`instagram_basic` permission)
-5. Exchange for a long-lived token (~60 days):
-   ```
-   GET https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret={APP_SECRET}&access_token={SHORT_LIVED_TOKEN}
-   ```
-6. Set as `INSTAGRAM_ACCESS_TOKEN` in `.env`
+Both the Instagram and TikTok feeds on the homepage are powered by [Curator.io](https://curator.io) embeds. No API tokens are needed — the feeds load via client-side scripts managed in Curator's dashboard.
 
 ## TikTok Videos
 

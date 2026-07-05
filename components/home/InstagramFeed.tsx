@@ -1,10 +1,24 @@
 "use client";
 
-import Script from "next/script";
+import { useEffect } from "react";
 
 const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/saithsfuff/";
+const CURATOR_SCRIPT_URL =
+  "https://cdn.curator.io/published/472166c9-01ec-4ba2-93cb-ea4bd5a8fb2f.js";
 
 export default function InstagramFeed() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.charset = "UTF-8";
+    script.src = CURATOR_SCRIPT_URL;
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
   return (
     <section id="instagram" className="section-container">
       <h2 className="font-display text-text-dark text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8">
@@ -12,8 +26,17 @@ export default function InstagramFeed() {
       </h2>
 
       <div className="whimsical-card p-4 sm:p-6">
-        {/* @ts-expect-error - behold-widget is a custom element loaded by the script */}
-        <behold-widget feed-id="5eh8S4Kcmn56zpeWPgSx"></behold-widget>
+        <div id="curator-feed-new-feed">
+          <a
+            href="https://curator.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="crt-logo crt-tag"
+          >
+            Powered by Curator.io
+            <span className="sr-only">(opens in new tab)</span>
+          </a>
+        </div>
       </div>
 
       <div className="text-center mt-8">
@@ -24,14 +47,9 @@ export default function InstagramFeed() {
           className="inline-block font-display text-sm font-medium text-pink-500 hover:text-pink-600 transition-colors"
         >
           Visit profile →
+          <span className="sr-only">(opens in new tab)</span>
         </a>
       </div>
-
-      <Script
-        src="https://w.behold.so/widget.js"
-        type="module"
-        strategy="lazyOnload"
-      />
     </section>
   );
 }
