@@ -1,9 +1,5 @@
 /**
- * Base path prefix for assets. In production (GitHub Pages), images and other
- * public assets need to be prefixed with the repo name since they're served
- * from a subdirectory (e.g. https://user.github.io/saithsfuff.com/).
- *
- * next/image with `unoptimized: true` does NOT automatically prepend basePath,
- * so we handle it manually.
+ * Base path prefix for assets. With a custom domain, assets are served
+ * from the root — no subdirectory prefix needed.
  */
-export const BASE_PATH = process.env.NODE_ENV === 'production' ? '/saithsfuff-site' : '';
+export const BASE_PATH = '';

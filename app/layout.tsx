@@ -3,9 +3,6 @@ import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
 import PasswordGate from "@/components/shared/PasswordGate";
 
-const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/saithsfuff-site' : '';
-
 const fredoka = Fredoka({
   subsets: ["latin"],
   variable: "--font-fredoka",
@@ -25,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to the whimsical world of saithsfuff — a streamer and content creator sharing fun moments, creative content, and good vibes across Instagram and TikTok.",
   icons: {
-    icon: `${basePath}/images/logo.gif`,
+    icon: `/images/logo.gif`,
   },
   openGraph: {
     title: "saithsfuff | Streamer & Content Creator",
