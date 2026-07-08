@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to the whimsical world of saithsfuff — a streamer and content creator sharing fun moments, creative content, and good vibes across Instagram and TikTok.",
   icons: {
-    icon: `/images/logo.gif`,
+    icon: `/favicon.png`,
   },
   openGraph: {
     title: "saithsfuff | Streamer & Content Creator",
