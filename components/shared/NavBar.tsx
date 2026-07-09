@@ -8,10 +8,11 @@ import { BASE_PATH } from "@/lib/constants";
 
 /** Site-wide navigation links rendered in both desktop and mobile layouts. */
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "SMP", href: "/smp" },
-  { label: "Links", href: "/links" },
+  { label: "Home", href: "/", external: false },
+  { label: "Portfolio", href: "/portfolio", external: false },
+  { label: "SMP", href: "/smp", external: false },
+  { label: "Shop", href: "https://fuff.shop", external: true },
+  { label: "Links", href: "/links", external: false },
 ];
 
 /**
@@ -47,15 +48,28 @@ export default function NavBar() {
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex md:items-center md:gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="font-display text-sm font-medium text-text-body transition-colors hover:text-pink-500 dark:text-lavender-200 dark:hover:text-lavender-400"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-display text-sm font-medium text-text-body transition-colors hover:text-pink-500 dark:text-lavender-200 dark:hover:text-lavender-400"
+                >
+                  {link.label}
+                  <span className="sr-only">(opens in new tab)</span>
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="font-display text-sm font-medium text-text-body transition-colors hover:text-pink-500 dark:text-lavender-200 dark:hover:text-lavender-400"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <ThemeToggle />
           </div>
 
@@ -114,16 +128,30 @@ export default function NavBar() {
         }`}
       >
         <div className="space-y-1 px-4 pb-4 pt-2">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="block rounded-card px-3 py-2 font-display text-sm font-medium text-text-body transition-colors hover:bg-pink-50 hover:text-pink-500 dark:text-lavender-200 dark:hover:bg-lavender-900/30 dark:hover:text-lavender-400"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-card px-3 py-2 font-display text-sm font-medium text-text-body transition-colors hover:bg-pink-50 hover:text-pink-500 dark:text-lavender-200 dark:hover:bg-lavender-900/30 dark:hover:text-lavender-400"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
+                <span className="sr-only">(opens in new tab)</span>
+              </a>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block rounded-card px-3 py-2 font-display text-sm font-medium text-text-body transition-colors hover:bg-pink-50 hover:text-pink-500 dark:text-lavender-200 dark:hover:bg-lavender-900/30 dark:hover:text-lavender-400"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
         </div>
       </div>
     </nav>
