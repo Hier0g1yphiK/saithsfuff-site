@@ -3,8 +3,7 @@ import { contactInfo } from "@/lib/media-kit-data";
 export default function ContactCTA() {
   return (
     <section className="section-container">
-      <div className="whimsical-card decorative-stars text-center">
-        <div className="sparkle-divider mb-6" />
+      <div className="whimsical-card text-center">
 
         <h2 className="font-display text-2xl font-semibold sm:text-3xl mb-4">
           <span className="gradient-text">Let&apos;s Work Together</span> 💌
@@ -41,7 +40,6 @@ export default function ContactCTA() {
           ))}
         </div>
 
-        <div className="sparkle-divider mt-6" />
       </div>
     </section>
   );

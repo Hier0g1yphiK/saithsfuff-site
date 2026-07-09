@@ -20,7 +20,7 @@ export default function MediaKitHero() {
 
         {/* Headline */}
         <h1 className="font-display text-3xl font-bold sm:text-4xl lg:text-5xl">
-          <span className="gradient-text">Media Kit & Portfolio</span> ✨
+          <span className="gradient-text">Portfolio</span>
         </h1>
 
         {/* Tagline */}
@@ -31,9 +31,18 @@ export default function MediaKitHero() {
 
         {/* Quick stats highlight */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm font-medium text-text-muted dark:text-lavender-300">
-          <span>🎮 45K+ Twitch</span>
-          <span>📸 28K+ Instagram</span>
-          <span>🎵 62K+ TikTok</span>
+          <span className="inline-flex items-center gap-1.5">
+            <Image src="/images/links/twitch.png" alt="" width={20} height={20} className="h-5 w-5 object-contain" />
+            18K+ Twitch
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <Image src="/images/links/instagram.png" alt="" width={20} height={20} className="h-5 w-5 object-contain" />
+            56K+ Instagram
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <Image src="/images/links/tiktok.png" alt="" width={20} height={20} className="h-5 w-5 object-contain" />
+            70K+ TikTok
+          </span>
         </div>
       </div>
     </section>

@@ -11,7 +11,6 @@ export interface PlatformStat {
   platform: string;
   icon: string;
   followers: string;
-  engagementRate: string;
   avgViews: string;
 }
 
@@ -52,9 +51,9 @@ export interface ContactInfo {
 
 /** Platform statistics — replace with real numbers */
 export const platformStats: PlatformStat[] = [
-  { platform: "Twitch", icon: "🎮", followers: "45.2K", engagementRate: "8.3%", avgViews: "1.2K" },
-  { platform: "Instagram", icon: "📸", followers: "28.7K", engagementRate: "5.1%", avgViews: "3.4K" },
-  { platform: "TikTok", icon: "🎵", followers: "62.1K", engagementRate: "12.7%", avgViews: "18.5K" },
+  { platform: "Twitch", icon: "/images/links/twitch.png", followers: "18.4K", avgViews: "38" },
+  { platform: "Instagram", icon: "/images/links/instagram.png", followers: "56.6K", avgViews: "3.4K" },
+  { platform: "TikTok", icon: "/images/links/tiktok.png", followers: "70.5K", avgViews: "38" },
 ];
 
 /** Age breakdown — replace with real analytics */

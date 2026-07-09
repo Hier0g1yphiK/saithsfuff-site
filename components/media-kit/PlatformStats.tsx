@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { platformStats } from "@/lib/media-kit-data";
 
 export default function PlatformStats() {
@@ -14,8 +15,14 @@ export default function PlatformStats() {
             className="glass-card p-6 text-center transition-transform hover:scale-[1.02]"
           >
             {/* Platform icon */}
-            <div className="mb-3 text-4xl" aria-hidden="true">
-              {stat.icon}
+            <div className="mb-3 flex justify-center" aria-hidden="true">
+              <Image
+                src={stat.icon}
+                alt=""
+                width={48}
+                height={48}
+                className="h-12 w-12 object-contain"
+              />
             </div>
 
             {/* Platform name */}
@@ -29,10 +36,7 @@ export default function PlatformStats() {
                 <span className="text-text-muted dark:text-lavender-300">Followers</span>
                 <span className="font-semibold text-text-dark dark:text-lavender-100">{stat.followers}</span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-text-muted dark:text-lavender-300">Engagement</span>
-                <span className="font-semibold text-text-dark dark:text-lavender-100">{stat.engagementRate}</span>
-              </div>
+
               <div className="flex justify-between">
                 <span className="text-text-muted dark:text-lavender-300">Avg. Views</span>
                 <span className="font-semibold text-text-dark dark:text-lavender-100">{stat.avgViews}</span>
