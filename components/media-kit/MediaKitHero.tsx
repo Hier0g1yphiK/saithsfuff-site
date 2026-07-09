@@ -44,6 +44,7 @@ export default function MediaKitHero() {
             70K+ TikTok
           </span>
         </div>
+
       </div>
     </section>
   );

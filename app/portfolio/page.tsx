@@ -7,6 +7,7 @@ import AudienceDemographics from "@/components/media-kit/AudienceDemographics";
 import BrandCollaborations from "@/components/media-kit/BrandCollaborations";
 import ContentExamples from "@/components/media-kit/ContentExamples";
 import ContactCTA from "@/components/media-kit/ContactCTA";
+import DownloadMediaKitButton from "@/components/media-kit/DownloadMediaKitButton";
 
 /** Page-level metadata for SEO and social sharing on the `/portfolio` route. */
 export const metadata: Metadata = {
@@ -43,6 +44,10 @@ export default function PortfolioPage() {
         <BrandCollaborations />
         <div className="sparkle-divider" />
         <ContentExamples />
+        <div className="sparkle-divider" />
+        <section className="py-12 text-center">
+          <DownloadMediaKitButton />
+        </section>
       </main>
       <footer className="py-8 text-center font-body text-sm text-text-body">
         <p>© 2026 saithsfuff. All rights reserved.</p>

@@ -3,9 +3,28 @@
     {
       "name": "Default",
       "files": [
-        "lib/media-kit-data.ts",
         ".vscode/changelists.json",
-        "components/media-kit/BrandCollaborations.tsx"
+        ".kiro/specs/download-media-kit-pdf/.config.kiro",
+        ".kiro/specs/download-media-kit-pdf/requirements.md",
+        ".kiro/specs/download-media-kit-pdf/design.md",
+        ".kiro/specs/download-media-kit-pdf/tasks.md",
+        "lib/pdf-config.ts",
+        "package-lock.json",
+        "package.json",
+        "lib/pdf-generator.ts",
+        "lib/hooks/usePdfGenerator.ts",
+        "components/media-kit/ErrorToast.tsx",
+        "components/media-kit/DownloadMediaKitButton.tsx",
+        "components/media-kit/MediaKitHero.tsx",
+        "__tests__/components/media-kit/ErrorToast.test.tsx",
+        "__tests__/lib/hooks/usePdfGenerator.test.ts",
+        "__tests__/components/media-kit/DownloadMediaKitButton.test.tsx",
+        "__tests__/lib/pdf-generator.test.ts",
+        "jest.setup.ts",
+        "jest.config.js",
+        "__tests__/lib/pdf-generator.property.test.ts",
+        "__tests__/lib/hooks/usePdfGenerator.property.test.ts",
+        "app/portfolio/page.tsx"
       ]
     }
   ],
