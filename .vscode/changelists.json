@@ -3,9 +3,8 @@
     {
       "name": "Default",
       "files": [
-        "lib/media-kit-data.ts",
-        ".vscode/changelists.json",
-        "components/media-kit/BrandCollaborations.tsx"
+        "components/splash/SplashPage.tsx",
+        ".vscode/changelists.json"
       ]
     }
   ],

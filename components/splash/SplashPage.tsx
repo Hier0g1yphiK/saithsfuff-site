@@ -1,6 +1,7 @@
 "use client";
 
 import DecorativeStars from "@/components/shared/DecorativeStars";
+import ThemeToggle from "@/components/shared/ThemeToggle";
 import PasswordForm from "@/components/splash/PasswordForm";
 
 interface SplashPageProps {
@@ -16,6 +17,11 @@ interface SplashPageProps {
 export default function SplashPage({ onAuthenticated }: SplashPageProps) {
   return (
     <div className="relative flex min-h-screen items-center justify-center overflow-x-hidden bg-gradient-hero px-4 dark:bg-none dark:bg-[#1a0e2e]">
+      {/* Theme toggle */}
+      <div className="absolute right-4 top-4 z-20">
+        <ThemeToggle />
+      </div>
+
       <DecorativeStars />
 
       <main className="relative z-10 flex w-full max-w-md flex-col items-center text-center">
