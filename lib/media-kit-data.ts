@@ -91,12 +91,9 @@ export const audienceInterests: string[] = [
 
 /** Brand collaborations — replace with real partners */
 export const brandCollaborations: BrandCollab[] = [
-  { name: "Cozy Gaming Co.", logoPlaceholder: "🎮", category: "Gaming" },
-  { name: "Pastel Beauty", logoPlaceholder: "💄", category: "Beauty" },
-  { name: "CloudSnack", logoPlaceholder: "☁️", category: "Food & Beverage" },
-  { name: "Neon Threads", logoPlaceholder: "👕", category: "Fashion" },
-  { name: "PixelPerfect", logoPlaceholder: "📱", category: "Tech" },
-  { name: "DreamStream", logoPlaceholder: "🌙", category: "Lifestyle" },
+  { name: "CyberPower PC", logoPlaceholder: "🎮", category: "Gaming" },
+  { name: "AMD", logoPlaceholder: "🎮", category: "Gaming" },
+  { name: "Asus", logoPlaceholder: "🎮", category: "Gaming" },
 ];
 
 /** Content examples — replace with real content */

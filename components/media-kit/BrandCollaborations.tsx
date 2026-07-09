@@ -7,11 +7,11 @@ export default function BrandCollaborations() {
         <span className="gradient-text">Brands I&apos;ve Worked With</span>
       </h2>
 
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+      <div className="flex flex-wrap justify-center gap-4">
         {brandCollaborations.map((brand) => (
           <div
             key={brand.name}
-            className="glass-card flex flex-col items-center justify-center p-4 text-center transition-transform hover:scale-105"
+            className="glass-card flex w-36 flex-col items-center justify-center p-4 text-center transition-transform hover:scale-105 sm:w-40"
           >
             {/* Placeholder logo */}
             <div className="mb-2 text-3xl" aria-hidden="true">
