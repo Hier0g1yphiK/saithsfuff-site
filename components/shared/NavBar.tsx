@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Home", href: "/", external: false },
   { label: "Portfolio", href: "/portfolio", external: false },
   { label: "SMP", href: "/smp", external: false },
-  { label: "Shop", href: "https://fuff.shop", external: true },
+  { label: "Merch", href: "https://fuff.shop", external: true },
   { label: "Links", href: "/links", external: false },
 ];
 
