@@ -58,26 +58,28 @@ export const platformStats: PlatformStat[] = [
 
 /** Age breakdown — replace with real analytics */
 export const ageBreakdown: DemographicAge[] = [
-  { range: "18-24", percentage: 42 },
-  { range: "25-34", percentage: 35 },
-  { range: "35-44", percentage: 15 },
-  { range: "45+", percentage: 8 },
+  { range: "13-17", percentage: 3 },
+  { range: "18-24", percentage: 48.4 },
+  { range: "25-34", percentage: 34.9 },
+  { range: "35-44", percentage: 8.5 },
+  { range: "45-54", percentage: 3.2 },
+  { range: "55+", percentage: 1.8 },
 ];
 
 /** Gender distribution — replace with real analytics */
 export const genderDistribution: DemographicGender[] = [
-  { label: "Female", percentage: 58 },
-  { label: "Male", percentage: 36 },
-  { label: "Other", percentage: 6 },
+  { label: "Female", percentage: 69.1 },
+  { label: "Male", percentage: 29.9 },
+  { label: "Other", percentage: 1 },
 ];
 
 /** Top geographic locations — replace with real analytics */
 export const topLocations: DemographicLocation[] = [
-  { country: "United States", percentage: 45 },
-  { country: "United Kingdom", percentage: 18 },
-  { country: "Canada", percentage: 12 },
-  { country: "Australia", percentage: 8 },
-  { country: "Germany", percentage: 5 },
+  { country: "United States", percentage: 28.5 },
+  { country: "United Kingdom", percentage: 5.7 },
+  { country: "Brazil", percentage: 10.9 },
+  { country: "Mexico", percentage: 7.8 },
+  { country: "Argentina", percentage: 3.5 },
 ];
 
 /** Audience interest categories — replace with real data */
