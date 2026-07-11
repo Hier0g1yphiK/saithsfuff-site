@@ -25,8 +25,8 @@ export default function MediaKitHero() {
 
         {/* Tagline */}
         <p className="mx-auto mt-4 max-w-2xl font-body text-lg text-text-body dark:text-gray-200 sm:text-xl">
-          Content creator & streamer building cozy communities and creating engaging,
-          authentic content across Twitch, Instagram, and TikTok.
+          Content creator & streamer building communities and creating engaging,
+          authentic content across Twitch, Instagram, TikTok and Youtube. Fnatic Crew member.
         </p>
 
         {/* Quick stats highlight */}

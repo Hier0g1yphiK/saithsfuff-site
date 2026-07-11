@@ -86,7 +86,10 @@ export const topLocations: DemographicLocation[] = [
 export const audienceInterests: string[] = [
   "Gaming",
   "Beauty & Fashion",
-  "Music",
+  "Clay Modelling",
+  "Woodwork",
+  "Cricut",
+  "Arts & Craft",
   "Technology",
   "Lifestyle",
 ];
