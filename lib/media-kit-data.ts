@@ -99,6 +99,7 @@ export const brandCollaborations: BrandCollab[] = [
   { name: "CyberPower PC", logoPlaceholder: "🎮", category: "Gaming" },
   { name: "AMD", logoPlaceholder: "🎮", category: "Gaming" },
   { name: "Asus", logoPlaceholder: "🎮", category: "Gaming" },
+  { name: "Charlotte Tilbury", logoPlaceholder: "💄", category: "Beauty" },
 ];
 
 /** Content examples — replace with real content */
