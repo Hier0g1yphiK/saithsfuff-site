@@ -49,7 +49,7 @@ export default function LinkCard({ name, href, description, icon }: LinkCardProp
         alt={`${name} logo`}
         width={32}
         height={32}
-        className="h-8 w-8 rounded-md object-contain dark:invert"
+        className="h-8 w-8 rounded-md object-contain"
       />
 
       <span className="font-display text-base font-medium text-text-dark dark:text-lavender-100 text-center">
