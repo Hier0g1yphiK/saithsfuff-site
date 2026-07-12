@@ -3,24 +3,8 @@
     {
       "name": "Default",
       "files": [
-        "app/portfolio/page.tsx",
-        ".vscode/changelists.json",
-        "app/links/page.tsx",
-        "app/smp/page.tsx",
-        "app/page.tsx",
-        "components/smp/WhitelistSection.tsx",
-        "components/smp/JavaSection.tsx",
-        "components/smp/BedrockSection.tsx",
-        "components/home/TwitchSection.tsx",
-        "components/home/InstagramFeed.tsx",
-        "components/home/TikTokFeed.tsx",
-        "components/media-kit/PlatformStats.tsx",
-        "components/media-kit/AudienceDemographics.tsx",
-        "components/media-kit/BrandCollaborations.tsx",
-        "components/media-kit/ContactCTA.tsx",
-        "components/media-kit/ContentExamples.tsx",
-        "components/media-kit/MediaKitHero.tsx",
-        ".kiro/steering/structure.md"
+        "app/layout.tsx",
+        ".vscode/changelists.json"
       ]
     }
   ],

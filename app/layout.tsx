@@ -18,23 +18,23 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "saithsfuff | Streamer & Content Creator",
+  title: "saithsfuff | Streamer, Gamer & Cozy Content Creator",
   description:
-    "Welcome to the whimsical world of saithsfuff — a streamer and content creator sharing fun moments, creative content, and good vibes across Instagram and TikTok.",
+    "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and lets hang out! ",
 
   openGraph: {
-    title: "saithsfuff | Streamer & Content Creator",
+    title: "saithsfuff | Streamer, Gamer & Cozy Content Creator",
     description:
-      "Welcome to the whimsical world of saithsfuff — a streamer and content creator sharing fun moments, creative content, and good vibes.",
+      "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and lets hang out! ",
     type: "website",
     url: "https://saithsfuff.com",
     siteName: "saithsfuff",
   },
   twitter: {
     card: "summary_large_image",
-    title: "saithsfuff | Streamer & Content Creator",
+    title: "saithsfuff | Streamer, Gamer & Cozy Content Creator",
     description:
-      "Welcome to the whimsical world of saithsfuff — a streamer and content creator sharing fun moments, creative content, and good vibes.",
+      "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and lets hang out! ",
   },
 };
 
