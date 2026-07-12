@@ -1,5 +1,16 @@
 import { contactInfo } from "@/lib/media-kit-data";
 
+/**
+ * Contact CTA section for the Portfolio/Media Kit page.
+ *
+ * Encourages brand partners to reach out with a prominent email button,
+ * displayed email address, and social media links. Data is sourced from
+ * `lib/media-kit-data.ts`.
+ *
+ * This is a React Server Component (no "use client" directive).
+ *
+ * @returns A `<section>` element containing the contact call-to-action.
+ */
 export default function ContactCTA() {
   return (
     <section className="section-container">

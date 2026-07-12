@@ -1,6 +1,17 @@
 import Image from "next/image";
 import { BASE_PATH } from "@/lib/constants";
 
+/**
+ * Hero section for the Portfolio/Media Kit page.
+ *
+ * Displays saithsfuff's profile photo, the "Portfolio" headline, a tagline
+ * about content creation, and quick follower stat highlights. Uses the pastel
+ * hero gradient in light mode and a deep purple backdrop in dark mode.
+ *
+ * This is a React Server Component (no "use client" directive).
+ *
+ * @returns A `<section>` element containing the hero content.
+ */
 export default function MediaKitHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-hero py-16 sm:py-24 dark:bg-none dark:bg-[#1a0e2e]">

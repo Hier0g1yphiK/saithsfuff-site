@@ -28,7 +28,7 @@ export const metadata: Metadata = {
  */
 export default function LinksPage() {
   return (
-    <div className="min-h-screen bg-gradient-whimsical dark:bg-none dark:bg-[#1a0e2e]">
+    <>
       <DecorativeStars />
       <NavBar />
       <main>
@@ -43,6 +43,6 @@ export default function LinksPage() {
       <footer className="py-8 text-center font-body text-sm text-text-body dark:text-gray-100">
         <p>© 2026 saithsfuff. All rights reserved.</p>
       </footer>
-    </div>
+    </>
   );
 }

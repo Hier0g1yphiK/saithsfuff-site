@@ -1,5 +1,16 @@
 import { brandCollaborations } from "@/lib/media-kit-data";
 
+/**
+ * Brand collaborations section for the Portfolio/Media Kit page.
+ *
+ * Displays past brand partners in a flex-wrap grid of glass cards. Each card
+ * shows a placeholder logo emoji, brand name, and category. Data is sourced
+ * from `lib/media-kit-data.ts`.
+ *
+ * This is a React Server Component (no "use client" directive).
+ *
+ * @returns A `<section>` element containing the brand collaboration cards.
+ */
 export default function BrandCollaborations() {
   return (
     <section className="section-container">

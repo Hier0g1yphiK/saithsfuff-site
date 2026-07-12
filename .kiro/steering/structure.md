@@ -6,18 +6,24 @@ app/                    # Next.js App Router pages and layouts
 ├── page.tsx            # Homepage
 ├── globals.css         # Tailwind layers + custom component/utility classes
 ├── links/page.tsx      # Links page
-├── portfolio/page.tsx  # Portfolio page
+├── portfolio/page.tsx  # Portfolio / Media Kit page
+├── smp/page.tsx        # SMP (Minecraft server) page
 └── api/                # API routes
 
 components/             # React components organized by page/feature
-├── shared/             # Cross-page components (NavBar, ThemeToggle)
-├── home/               # Homepage sections (TwitchSection, InstagramFeed, TikTokFeed)
-├── links/              # Links page components (LinkCard, LinksHero, etc.)
-└── media-kit/          # Media kit page components
+├── shared/             # Cross-page components (NavBar, ThemeToggle, DecorativeStars, PasswordGate)
+├── home/               # Homepage sections (HomeHero, TwitchSection, InstagramFeed, TikTokFeed)
+├── links/              # Links page components (LinkCard, LinksHero, SocialLinksSection, PartnersSection)
+├── media-kit/          # Portfolio/Media Kit page components (MediaKitHero, PlatformStats, etc.)
+├── smp/                # SMP page components (SmpHero, JavaSection, BedrockSection, etc.)
+└── splash/             # Splash/password gate components (SplashPage, PasswordForm)
 
 lib/                    # Shared utilities, data, and helpers
+├── auth.ts             # Password gate authentication helpers
+├── constants.ts        # Shared constants (BASE_PATH)
 ├── links-data.ts       # Static link/partner data
-└── media-kit-data.ts   # Media kit static data
+├── media-kit-data.ts   # Media kit / portfolio static data
+└── smp-data.ts         # SMP page static data
 
 prisma/                 # Database schema and migrations
 ├── schema.prisma

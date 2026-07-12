@@ -6,6 +6,16 @@ const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/saithsfuff/";
 const CURATOR_SCRIPT_URL =
   "https://cdn.curator.io/published/472166c9-01ec-4ba2-93cb-ea4bd5a8fb2f.js";
 
+/**
+ * Instagram feed section for the homepage.
+ *
+ * Loads the Curator.io embed script to render a live Instagram feed from
+ * saithsfuff's profile. Includes a direct link to the Instagram profile below.
+ *
+ * This is a Client Component (requires `useEffect` to inject the embed script).
+ *
+ * @returns A `<section>` element containing the Instagram feed embed.
+ */
 export default function InstagramFeed() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -21,7 +31,7 @@ export default function InstagramFeed() {
 
   return (
     <section id="instagram" className="section-container">
-      <h2 className="font-display text-text-dark text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8">
+      <h2 className="font-display text-2xl font-semibold text-center sm:text-3xl mb-8">
         <span className="gradient-text">Follow on Instagram</span> 📸
       </h2>
 

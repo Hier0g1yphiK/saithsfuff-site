@@ -1,6 +1,16 @@
 import Image from "next/image";
 import { platformStats } from "@/lib/media-kit-data";
 
+/**
+ * Platform statistics section for the Portfolio/Media Kit page.
+ *
+ * Displays follower counts and average views for each platform in a responsive
+ * grid of glass cards. Data is sourced from `lib/media-kit-data.ts`.
+ *
+ * This is a React Server Component (no "use client" directive).
+ *
+ * @returns A `<section>` element containing the platform stats grid.
+ */
 export default function PlatformStats() {
   return (
     <section className="section-container">

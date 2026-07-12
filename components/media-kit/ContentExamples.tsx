@@ -1,5 +1,16 @@
 import { contentExamples } from "@/lib/media-kit-data";
 
+/**
+ * Content examples section for the Portfolio/Media Kit page.
+ *
+ * Displays sample content pieces in a 4-column grid with placeholder
+ * thumbnails, titles, platform badges, and view counts. Data is sourced
+ * from `lib/media-kit-data.ts`.
+ *
+ * This is a React Server Component (no "use client" directive).
+ *
+ * @returns A `<section>` element containing the content examples grid.
+ */
 export default function ContentExamples() {
   return (
     <section className="section-container">

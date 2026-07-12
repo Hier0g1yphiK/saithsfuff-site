@@ -6,6 +6,16 @@ const TIKTOK_CHANNEL_URL = "https://www.tiktok.com/@saithsfuff";
 const CURATOR_SCRIPT_URL =
   "https://cdn.curator.io/published/a8162826-eb1b-403b-bfc7-e5dce84fbae8.js";
 
+/**
+ * TikTok feed section for the homepage.
+ *
+ * Loads the Curator.io embed script to render a live TikTok feed from
+ * saithsfuff's profile. Includes a direct link to the TikTok channel below.
+ *
+ * This is a Client Component (requires `useEffect` to inject the embed script).
+ *
+ * @returns A `<section>` element containing the TikTok feed embed.
+ */
 export default function TikTokFeed() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -21,7 +31,7 @@ export default function TikTokFeed() {
 
   return (
     <section id="tiktok" className="section-container">
-      <h2 className="font-display text-text-dark text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8">
+      <h2 className="font-display text-2xl font-semibold text-center sm:text-3xl mb-8">
         <span className="gradient-text">Follow on TikTok</span> 🎵
       </h2>
 

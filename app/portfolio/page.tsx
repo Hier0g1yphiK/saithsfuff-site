@@ -44,7 +44,7 @@ export default function PortfolioPage() {
         <div className="sparkle-divider" />
         <ContentExamples />
       </main>
-      <footer className="py-8 text-center font-body text-sm text-text-body">
+      <footer className="py-8 text-center font-body text-sm text-text-body dark:text-gray-100">
         <p>© 2026 saithsfuff. All rights reserved.</p>
       </footer>
     </>

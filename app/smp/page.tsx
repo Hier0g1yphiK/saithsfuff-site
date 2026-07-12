@@ -25,29 +25,23 @@ export const metadata: Metadata = {
  * sourced from static data in `lib/smp-data.ts`.
  *
  * **Layout order:**
- * `DecorativeStars` → `NavBar` → `<main>` (SmpHero → sparkle-divider →
- * JavaSection → sparkle-divider → BedrockSection) → `<footer>`
+ * `DecorativeStars` → `NavBar` → `<main>` (SmpHero → WhitelistSection →
+ * JavaSection → BedrockSection) → `<footer>`
  *
  * This is a **React Server Component** (no `"use client"` directive).
  * The only client-side JS on this route comes from `ServerIpDisplay` inside
  * `JavaSection`.
  *
  * @remarks
- * - Background uses `bg-gradient-whimsical` with `dark:bg-[#1a0e2e]`.
+ * - Background is handled by the root layout (`bg-gradient-whimsical` on `<body>`).
  * - Sparkle dividers (`sparkle-divider` class) visually separate sections.
  * - Footer follows the site-wide pattern: `py-8 text-center font-body text-sm`.
- *
- * @example
- * ```
- * // This page is automatically served at /smp by Next.js App Router.
- * // No manual routing configuration needed.
- * ```
  *
  * @returns The fully-rendered SMP page layout.
  */
 export default function SmpPage() {
   return (
-    <div className="min-h-screen bg-gradient-whimsical dark:bg-none dark:bg-[#1a0e2e]">
+    <>
       <DecorativeStars />
       <NavBar />
       <main>
@@ -64,6 +58,6 @@ export default function SmpPage() {
       <footer className="py-8 text-center font-body text-sm text-text-body dark:text-gray-100">
         <p>© 2026 saithsfuff. All rights reserved.</p>
       </footer>
-    </div>
+    </>
   );
 }

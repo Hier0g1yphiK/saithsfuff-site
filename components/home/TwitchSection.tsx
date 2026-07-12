@@ -8,6 +8,17 @@ const TWITCH_CHANNEL_URL = "https://www.twitch.tv/saithsfuff";
 const TWITCH_EMBED_SCRIPT = "https://embed.twitch.tv/embed/v1.js";
 const TIMEOUT_MS = 10000;
 
+/**
+ * Twitch embed section for the homepage.
+ *
+ * Loads the Twitch embed script and renders an interactive video player for
+ * the saithsfuff channel. Falls back to a link if the embed fails to load
+ * within a timeout period.
+ *
+ * This is a Client Component (requires `useEffect` and `useState` for embed lifecycle).
+ *
+ * @returns A `<section>` element containing the Twitch player or fallback link.
+ */
 export default function TwitchSection() {
   const [embedStatus, setEmbedStatus] = useState<
     "loading" | "ready" | "error"
@@ -65,7 +76,7 @@ export default function TwitchSection() {
 
   return (
     <section id="twitch" className="section-container">
-      <h2 className="font-display text-text-dark text-2xl sm:text-3xl lg:text-4xl font-semibold text-center mb-8">
+      <h2 className="font-display text-2xl font-semibold text-center sm:text-3xl mb-8">
         <span className="gradient-text">Watch on Twitch</span> 🎮
       </h2>
 

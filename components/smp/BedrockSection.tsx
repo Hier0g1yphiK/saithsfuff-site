@@ -3,9 +3,8 @@ import { smpData } from "@/lib/smp-data";
 /**
  * Bedrock Edition connection instructions section for the SMP page.
  *
- * Renders an `<h2>` heading and step-by-step instructions inside a
- * `whimsical-card`. Structurally mirrors {@link JavaSection} but omits
- * the `ServerIpDisplay` (Bedrock connection details are still TBD).
+ * Renders an `<h2>` heading, the server IP and port, step-by-step instructions
+ * inside a `whimsical-card`, and optional help video links.
  *
  * This is a **React Server Component** — ships zero client JS.
  *
@@ -15,14 +14,6 @@ import { smpData } from "@/lib/smp-data";
  * - Steps render as an `<ol>` (ordered list) for accessibility.
  * - All display text is sourced from `lib/smp-data.ts`.
  *
- * @example
- * ```tsx
- * // Used inside app/smp/page.tsx
- * import BedrockSection from "@/components/smp/BedrockSection";
- *
- * <BedrockSection />
- * ```
- *
  * @returns A `<section>` element containing the Bedrock Edition joining guide.
  */
 export default function BedrockSection() {
@@ -30,8 +21,8 @@ export default function BedrockSection() {
 
   return (
     <section className="section-container">
-      <h2 className="text-center font-display text-2xl font-bold text-text-dark dark:text-lavender-100 sm:text-3xl">
-        {title}
+      <h2 className="text-center font-display text-2xl font-semibold sm:text-3xl">
+        <span className="gradient-text">{title}</span>
       </h2>
 
       <div className="whimsical-card mt-6 dark:border-lavender-300/20 dark:bg-[#2d1b4e]">

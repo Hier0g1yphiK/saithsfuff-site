@@ -5,6 +5,17 @@ import {
   audienceInterests,
 } from "@/lib/media-kit-data";
 
+/**
+ * Audience demographics section for the Portfolio/Media Kit page.
+ *
+ * Displays age breakdown, gender distribution, top locations, and audience
+ * interests in a 2-column grid of whimsical cards with progress bars. Data is
+ * sourced from `lib/media-kit-data.ts`.
+ *
+ * This is a React Server Component (no "use client" directive).
+ *
+ * @returns A `<section>` element containing the demographics grid.
+ */
 export default function AudienceDemographics() {
   return (
     <section className="section-container">

@@ -31,8 +31,8 @@ export default function JavaSection() {
 
   return (
     <section className="section-container">
-      <h2 className="text-center font-display text-2xl font-bold text-text-dark dark:text-lavender-100 sm:text-3xl">
-        {title}
+      <h2 className="text-center font-display text-2xl font-semibold sm:text-3xl">
+        <span className="gradient-text">{title}</span>
       </h2>
 
       <div className="whimsical-card mt-6 dark:border-lavender-300/20 dark:bg-[#2d1b4e]">
