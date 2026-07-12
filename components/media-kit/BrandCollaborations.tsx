@@ -32,7 +32,7 @@ export default function BrandCollaborations() {
                 alt={`${brand.name} logo`}
                 width={48}
                 height={48}
-                className="h-12 w-12 object-contain"
+                className="h-12 w-12 object-contain dark:invert"
               />
             </div>
 
