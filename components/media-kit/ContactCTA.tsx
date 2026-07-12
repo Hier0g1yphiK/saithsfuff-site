@@ -44,9 +44,12 @@ export default function ContactCTA() {
             <a
               key={link.platform}
               href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1 rounded-pill bg-pink-50 px-3 py-1.5 text-sm font-medium text-text-body transition-colors hover:bg-pink-100 dark:bg-lavender-900/40 dark:text-lavender-200 dark:hover:bg-lavender-900/60"
             >
               {link.label}
+              <span className="sr-only">(opens in new tab)</span>
             </a>
           ))}
         </div>
