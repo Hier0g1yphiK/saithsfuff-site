@@ -3,8 +3,8 @@
     {
       "name": "Default",
       "files": [
-        "components/media-kit/BrandCollaborations.tsx",
-        ".vscode/changelists.json"
+        ".vscode/changelists.json",
+        "components/links/LinkCard.tsx"
       ]
     }
   ],
