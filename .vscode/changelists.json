@@ -3,8 +3,13 @@
     {
       "name": "Default",
       "files": [
-        "app/layout.tsx",
-        ".vscode/changelists.json"
+        ".vscode/changelists.json",
+        "public/images/logos/amd.png",
+        "public/images/logos/asus.png",
+        "public/images/logos/cyberpower.png",
+        "public/images/logos/charlotte-tilbury.png",
+        "lib/media-kit-data.ts",
+        "components/media-kit/BrandCollaborations.tsx"
       ]
     }
   ],

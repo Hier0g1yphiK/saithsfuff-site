@@ -31,7 +31,7 @@ export interface DemographicLocation {
 
 export interface BrandCollab {
   name: string;
-  logoPlaceholder: string;
+  logo: string;
   category: string;
 }
 
@@ -96,10 +96,10 @@ export const audienceInterests: string[] = [
 
 /** Brand collaborations — replace with real partners */
 export const brandCollaborations: BrandCollab[] = [
-  { name: "CyberPower PC", logoPlaceholder: "🎮", category: "Gaming" },
-  { name: "AMD", logoPlaceholder: "🎮", category: "Gaming" },
-  { name: "Asus", logoPlaceholder: "🎮", category: "Gaming" },
-  { name: "Charlotte Tilbury", logoPlaceholder: "💄", category: "Beauty" },
+  { name: "CyberPower PC", logo: "/images/logos/cyberpower.png", category: "Gaming" },
+  { name: "AMD", logo: "/images/logos/amd.png", category: "Gaming" },
+  { name: "Asus", logo: "/images/logos/asus.png", category: "Gaming" },
+  { name: "Charlotte Tilbury", logo: "/images/logos/charlotte-tilbury.png", category: "Beauty" },
 ];
 
 /** Content examples — replace with real content */

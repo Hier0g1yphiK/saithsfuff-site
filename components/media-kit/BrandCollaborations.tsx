@@ -1,11 +1,12 @@
+import Image from "next/image";
 import { brandCollaborations } from "@/lib/media-kit-data";
 
 /**
  * Brand collaborations section for the Portfolio/Media Kit page.
  *
  * Displays past brand partners in a flex-wrap grid of glass cards. Each card
- * shows a placeholder logo emoji, brand name, and category. Data is sourced
- * from `lib/media-kit-data.ts`.
+ * shows the brand logo, name, and category. Data is sourced from
+ * `lib/media-kit-data.ts`.
  *
  * This is a React Server Component (no "use client" directive).
  *
@@ -24,9 +25,15 @@ export default function BrandCollaborations() {
             key={brand.name}
             className="glass-card flex w-36 flex-col items-center justify-center p-4 text-center transition-transform hover:scale-105 sm:w-40"
           >
-            {/* Placeholder logo */}
-            <div className="mb-2 text-3xl" aria-hidden="true">
-              {brand.logoPlaceholder}
+            {/* Brand logo */}
+            <div className="mb-2 flex h-12 w-12 items-center justify-center">
+              <Image
+                src={brand.logo}
+                alt={`${brand.name} logo`}
+                width={48}
+                height={48}
+                className="h-12 w-12 object-contain"
+              />
             </div>
 
             {/* Brand name */}
