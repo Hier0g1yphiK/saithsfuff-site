@@ -36,10 +36,7 @@ export interface BrandCollab {
 }
 
 export interface ContentExample {
-  title: string;
-  platform: string;
-  views: string;
-  thumbnailColor: string; // Tailwind bg class for placeholder thumbnail
+  postUrl: string; // Instagram post/reel permalink for the embed
 }
 
 export interface ContactInfo {
@@ -92,6 +89,7 @@ export const audienceInterests: string[] = [
   "Arts & Craft",
   "Technology",
   "Lifestyle",
+  "Blind Boxes"
 ];
 
 /** Brand collaborations — replace with real partners */
@@ -100,14 +98,17 @@ export const brandCollaborations: BrandCollab[] = [
   { name: "AMD", logo: "/images/logos/amd.png", category: "Gaming" },
   { name: "Asus", logo: "/images/logos/asus.png", category: "Gaming" },
   { name: "Charlotte Tilbury", logo: "/images/logos/charlotte-tilbury.png", category: "Beauty" },
+  { name: "Hyte", logo: "/images/logos/charlotte-tilbury.png", category: "Gaming" },
+  { name: "Nintendo", logo: "/images/logos/charlotte-tilbury.png", category: "Gaming" },
+  { name: "Minecraft", logo: "/images/logos/charlotte-tilbury.png", category: "Gaming" },
 ];
 
-/** Content examples — replace with real content */
+/** Content examples — Instagram reels embedded via Instagram's embed script */
 export const contentExamples: ContentExample[] = [
-  { title: "Cozy Gaming Setup Tour", platform: "TikTok", views: "124K", thumbnailColor: "bg-pink-200" },
-  { title: "Morning Routine GRWM", platform: "Instagram", views: "45K", thumbnailColor: "bg-lavender-200" },
-  { title: "Brand Unboxing & Review", platform: "TikTok", views: "89K", thumbnailColor: "bg-mint-200" },
-  { title: "Stream Highlights Reel", platform: "Twitch", views: "32K", thumbnailColor: "bg-pink-100" },
+  { postUrl: "https://www.instagram.com/reel/Dcn2WDMChKs/" },
+  { postUrl: "https://www.instagram.com/reel/DV88KJGgiiv/" },
+  { postUrl: "https://www.instagram.com/reel/DHEZU57iVfv/" },
+  { postUrl: "https://www.instagram.com/reel/C12NQI8ip1v/" },
 ];
 
 /** Contact information — replace with real details */
