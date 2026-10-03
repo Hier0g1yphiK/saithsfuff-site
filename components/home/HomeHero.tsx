@@ -37,8 +37,6 @@ export default function HomeHero() {
           Streamer, content creator, and cozy community builder. Welcome to my
           little corner of the internet, grab a snack and lets hang out! 💖
         </p>
-
-
       </div>
     </section>
   );

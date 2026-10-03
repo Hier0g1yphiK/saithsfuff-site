@@ -34,7 +34,10 @@ export default function PasswordForm({ onSuccess }: PasswordFormProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex w-full max-w-sm flex-col gap-3">
+    <form
+      onSubmit={handleSubmit}
+      className="flex w-full max-w-sm flex-col gap-3"
+    >
       <label
         htmlFor="splash-password"
         className="font-body text-sm font-semibold text-text-body dark:text-lavender-200"

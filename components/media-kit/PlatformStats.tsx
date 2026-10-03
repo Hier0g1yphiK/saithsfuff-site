@@ -43,13 +43,21 @@ export default function PlatformStats() {
             {/* Metrics */}
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-text-muted dark:text-lavender-300">Followers</span>
-                <span className="font-semibold text-text-dark dark:text-lavender-100">{stat.followers}</span>
+                <span className="text-text-muted dark:text-lavender-300">
+                  Followers
+                </span>
+                <span className="font-semibold text-text-dark dark:text-lavender-100">
+                  {stat.followers}
+                </span>
               </div>
 
               <div className="flex justify-between">
-                <span className="text-text-muted dark:text-lavender-300">Avg. Views</span>
-                <span className="font-semibold text-text-dark dark:text-lavender-100">{stat.avgViews}</span>
+                <span className="text-text-muted dark:text-lavender-300">
+                  Avg. Views
+                </span>
+                <span className="font-semibold text-text-dark dark:text-lavender-100">
+                  {stat.avgViews}
+                </span>
               </div>
             </div>
           </div>

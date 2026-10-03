@@ -31,8 +31,12 @@ export default function AudienceDemographics() {
             {ageBreakdown.map((item) => (
               <div key={item.range}>
                 <div className="mb-1 flex justify-between text-sm">
-                  <span className="text-text-body dark:text-gray-200">{item.range}</span>
-                  <span className="font-medium text-text-dark dark:text-lavender-100">{item.percentage}%</span>
+                  <span className="text-text-body dark:text-gray-200">
+                    {item.range}
+                  </span>
+                  <span className="font-medium text-text-dark dark:text-lavender-100">
+                    {item.percentage}%
+                  </span>
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-pill bg-pink-100 dark:bg-lavender-900/50">
                   <div
@@ -52,8 +56,12 @@ export default function AudienceDemographics() {
             {genderDistribution.map((item) => (
               <div key={item.label}>
                 <div className="mb-1 flex justify-between text-sm">
-                  <span className="text-text-body dark:text-gray-200">{item.label}</span>
-                  <span className="font-medium text-text-dark dark:text-lavender-100">{item.percentage}%</span>
+                  <span className="text-text-body dark:text-gray-200">
+                    {item.label}
+                  </span>
+                  <span className="font-medium text-text-dark dark:text-lavender-100">
+                    {item.percentage}%
+                  </span>
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-pill bg-pink-100 dark:bg-lavender-900/50">
                   <div
@@ -68,13 +76,19 @@ export default function AudienceDemographics() {
 
         {/* Top locations */}
         <div className="whimsical-card">
-          <h3 className="font-display text-lg font-medium mb-4">Top Locations</h3>
+          <h3 className="font-display text-lg font-medium mb-4">
+            Top Locations
+          </h3>
           <div className="space-y-3">
             {topLocations.map((item) => (
               <div key={item.country}>
                 <div className="mb-1 flex justify-between text-sm">
-                  <span className="text-text-body dark:text-gray-200">{item.country}</span>
-                  <span className="font-medium text-text-dark dark:text-lavender-100">{item.percentage}%</span>
+                  <span className="text-text-body dark:text-gray-200">
+                    {item.country}
+                  </span>
+                  <span className="font-medium text-text-dark dark:text-lavender-100">
+                    {item.percentage}%
+                  </span>
                 </div>
                 <div className="h-2 w-full overflow-hidden rounded-pill bg-pink-100 dark:bg-lavender-900/50">
                   <div

@@ -20,9 +20,9 @@ const TIMEOUT_MS = 10000;
  * @returns A `<section>` element containing the Twitch player or fallback link.
  */
 export default function TwitchSection() {
-  const [embedStatus, setEmbedStatus] = useState<
-    "loading" | "ready" | "error"
-  >("loading");
+  const [embedStatus, setEmbedStatus] = useState<"loading" | "ready" | "error">(
+    "loading"
+  );
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -108,8 +108,7 @@ export default function TwitchSection() {
           rel="noopener noreferrer"
           className="inline-block font-display text-sm font-medium text-pink-500 hover:text-pink-600 transition-colors"
         >
-          Visit channel →
-          <span className="sr-only">(opens in new tab)</span>
+          Visit channel →<span className="sr-only">(opens in new tab)</span>
         </a>
       </div>
 

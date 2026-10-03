@@ -124,7 +124,8 @@ export interface SmpPageData {
 export const smpData: SmpPageData = {
   hero: {
     serverName: "Saithsfuff SMP's",
-    tagline: "A cozy community Minecraft server, with both Java and Bedrock players! A new modded Java SMP coming soon!",
+    tagline:
+      "A cozy community Minecraft server, with both Java and Bedrock players! A new modded Java SMP coming soon!",
   },
   serverIp: "saith.kinetichosting.gg",
   bedrockIp: "212.117.170.28",
@@ -133,7 +134,7 @@ export const smpData: SmpPageData = {
     title: "Java Edition",
     steps: [
       "Open Minecraft Java Edition and go to Multiplayer.",
-      "Click \"Add Server\" and paste the IP address below.",
+      'Click "Add Server" and paste the IP address below.',
       "Join and have fun!",
     ],
   },
@@ -141,13 +142,14 @@ export const smpData: SmpPageData = {
     title: "Bedrock Edition",
     steps: [
       "Open Minecraft Bedrock Edition and go to the Servers tab.",
-      "Scroll to the bottom and click \"Add Server\".",
+      'Scroll to the bottom and click "Add Server".',
       "Enter the server address (212.117.170.28) and port (25682).",
       "Join and have fun!",
     ],
     helpVideos: [
       {
-        label: "On Bedrock devices and need help joining? Here is a helpful video!",
+        label:
+          "On Bedrock devices and need help joining? Here is a helpful video!",
         url: "https://www.youtube.com/watch?v=bDvo9XO-uAU&feature=youtu.be",
       },
       {
@@ -159,7 +161,7 @@ export const smpData: SmpPageData = {
   whitelistSection: {
     title: "How to Get Whitelisted",
     description:
-      "To be whitelisted on the FuffSMP you need to either be a past member or redeem \"Join the SMP\" for 500 channel points on Twitch (a follow and roughly an hour of watchtime).",
+      'To be whitelisted on the FuffSMP you need to either be a past member or redeem "Join the SMP" for 500 channel points on Twitch (a follow and roughly an hour of watchtime).',
     twitchUrl: "https://twitch.tv/saithsfuff",
   },
 };

@@ -37,21 +37,40 @@ export default function MediaKitHero() {
         {/* Tagline */}
         <p className="mx-auto mt-4 max-w-2xl font-body text-lg text-text-body dark:text-gray-200 sm:text-xl">
           Content creator & streamer building communities and creating engaging,
-          authentic content across Twitch, Instagram, TikTok and Youtube. Fnatic Crew member.
+          authentic content across Twitch, Instagram, TikTok and Youtube. Fnatic
+          Crew member.
         </p>
 
         {/* Quick stats highlight */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm font-medium text-text-muted dark:text-lavender-300">
           <span className="inline-flex items-center gap-1.5">
-            <Image src="/images/links/twitch.png" alt="" width={20} height={20} className="h-5 w-5 object-contain" />
+            <Image
+              src="/images/links/twitch.png"
+              alt=""
+              width={20}
+              height={20}
+              className="h-5 w-5 object-contain"
+            />
             18K+ Twitch
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <Image src="/images/links/instagram.png" alt="" width={20} height={20} className="h-5 w-5 object-contain" />
+            <Image
+              src="/images/links/instagram.png"
+              alt=""
+              width={20}
+              height={20}
+              className="h-5 w-5 object-contain"
+            />
             56K+ Instagram
           </span>
           <span className="inline-flex items-center gap-1.5">
-            <Image src="/images/links/tiktok.png" alt="" width={20} height={20} className="h-5 w-5 object-contain" />
+            <Image
+              src="/images/links/tiktok.png"
+              alt=""
+              width={20}
+              height={20}
+              className="h-5 w-5 object-contain"
+            />
             70K+ TikTok
           </span>
         </div>

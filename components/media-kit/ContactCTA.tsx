@@ -15,14 +15,13 @@ export default function ContactCTA() {
   return (
     <section className="section-container">
       <div className="whimsical-card text-center">
-
         <h2 className="font-display text-2xl font-semibold sm:text-3xl mb-4">
           <span className="gradient-text">Let&apos;s Work Together</span> 💌
         </h2>
 
         <p className="mx-auto max-w-lg font-body text-text-body dark:text-gray-200 mb-6">
-          Interested in a collaboration? I&apos;d love to hear from you! Reach out for
-          sponsored content, brand partnerships, or creative projects.
+          Interested in a collaboration? I&apos;d love to hear from you! Reach
+          out for sponsored content, brand partnerships, or creative projects.
         </p>
 
         {/* CTA Button */}
@@ -53,7 +52,6 @@ export default function ContactCTA() {
             </a>
           ))}
         </div>
-
       </div>
     </section>
   );

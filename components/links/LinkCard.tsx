@@ -35,7 +35,12 @@ interface LinkCardProps {
  * />
  * ```
  */
-export default function LinkCard({ name, href, description, icon }: LinkCardProps) {
+export default function LinkCard({
+  name,
+  href,
+  description,
+  icon,
+}: LinkCardProps) {
   return (
     <a
       href={href}

@@ -44,7 +44,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fredoka.variable} ${nunito.variable}`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${fredoka.variable} ${nunito.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{

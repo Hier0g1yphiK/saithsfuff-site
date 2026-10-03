@@ -56,8 +56,7 @@ export default function InstagramFeed() {
           rel="noopener noreferrer"
           className="inline-block font-display text-sm font-medium text-pink-500 hover:text-pink-600 transition-colors"
         >
-          Visit profile →
-          <span className="sr-only">(opens in new tab)</span>
+          Visit profile →<span className="sr-only">(opens in new tab)</span>
         </a>
       </div>
     </section>

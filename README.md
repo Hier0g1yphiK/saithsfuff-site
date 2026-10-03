@@ -11,12 +11,12 @@ Personal website for **saithsfuff** — a content creator and Twitch streamer. A
 
 ## Pages
 
-| Route | Description |
-|-------|-------------|
-| `/` | Homepage — hero, embedded Twitch player, Instagram & TikTok feeds (Curator.io) |
-| `/links` | Link-in-bio page — social profiles and partner/sponsor discount codes |
+| Route        | Description                                                                          |
+| ------------ | ------------------------------------------------------------------------------------ |
+| `/`          | Homepage — hero, embedded Twitch player, Instagram & TikTok feeds (Curator.io)       |
+| `/links`     | Link-in-bio page — social profiles and partner/sponsor discount codes                |
 | `/portfolio` | Media kit — platform stats, audience demographics, brand collaborations, contact CTA |
-| `/smp` | Minecraft SMP — server info, Java & Bedrock connection guides, whitelist form |
+| `/smp`       | Minecraft SMP — server info, Java & Bedrock connection guides, whitelist form        |
 
 All pages are protected behind a client-side password gate (splash screen).
 
@@ -79,22 +79,22 @@ The site runs at [http://localhost:3000](http://localhost:3000).
 
 Create a `.env.local` file in the project root:
 
-| Variable | Description |
-|----------|-------------|
+| Variable                    | Description                              |
+| --------------------------- | ---------------------------------------- |
 | `NEXT_PUBLIC_SITE_PASSWORD` | Password for the client-side splash gate |
-| `DATABASE_URL` | PostgreSQL connection string |
+| `DATABASE_URL`              | PostgreSQL connection string             |
 
 ## Scripts
 
-| Command | Purpose |
-|---------|---------|
-| `npm run dev` | Start development server |
-| `npm run build` | Production build |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
-| `npm test` | Run Jest tests |
-| `npx prisma migrate dev` | Run database migrations |
-| `npx prisma generate` | Regenerate Prisma client |
+| Command                  | Purpose                  |
+| ------------------------ | ------------------------ |
+| `npm run dev`            | Start development server |
+| `npm run build`          | Production build         |
+| `npm run start`          | Start production server  |
+| `npm run lint`           | Run ESLint               |
+| `npm test`               | Run Jest tests           |
+| `npx prisma migrate dev` | Run database migrations  |
+| `npx prisma generate`    | Regenerate Prisma client |
 
 ## Social Feeds
 

@@ -27,7 +27,10 @@ export default function BedrockSection() {
 
       <div className="whimsical-card mt-6 dark:border-lavender-300/20 dark:bg-[#2d1b4e]">
         <div className="flex flex-col items-center gap-1 mb-4">
-          <span className="text-2xl font-display font-bold text-pink-600 dark:text-pink-300 select-all" style={{ userSelect: "all" }}>
+          <span
+            className="text-2xl font-display font-bold text-pink-600 dark:text-pink-300 select-all"
+            style={{ userSelect: "all" }}
+          >
             {smpData.bedrockIp}
           </span>
           <span className="text-sm font-body text-text-muted dark:text-gray-300">

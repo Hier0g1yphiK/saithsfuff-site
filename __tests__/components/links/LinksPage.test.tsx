@@ -30,10 +30,17 @@ describe("SocialLinksSection", () => {
 
     const expectedLinks = [
       { name: "Instagram", href: "https://instagram.com/saithsfuff" },
-      { name: "TikTok", href: "https://www.tiktok.com/@saithsfuff", exact: true },
+      {
+        name: "TikTok",
+        href: "https://www.tiktok.com/@saithsfuff",
+        exact: true,
+      },
       { name: "Twitch", href: "https://twitch.tv/saithsfuff" },
       { name: "Twitter", href: "https://twitter.com/saithsfuff" },
-      { name: "BlueSky", href: "https://bsky.app/profile/saithsfuff.bsky.social" },
+      {
+        name: "BlueSky",
+        href: "https://bsky.app/profile/saithsfuff.bsky.social",
+      },
       { name: "YouTube", href: "https://www.youtube.com/saithsfuff" },
       { name: "Threads", href: "https://www.threads.net/@saithsfuff" },
       { name: "Clips TikTok", href: "https://www.tiktok.com/@ttv.saithsfuff" },
@@ -47,7 +54,8 @@ describe("SocialLinksSection", () => {
       if (exact) {
         // Use exact match to distinguish "TikTok" from "Clips TikTok"
         link = allLinks.find(
-          (el) => el.textContent?.includes(name) && !el.textContent?.includes("Clips")
+          (el) =>
+            el.textContent?.includes(name) && !el.textContent?.includes("Clips")
         )!;
       } else {
         link = screen.getByRole("link", { name: new RegExp(name) });
@@ -76,12 +84,14 @@ describe("PartnersSection", () => {
     {
       name: "Kinetic Hosting",
       href: "https://kinetichosting.net/",
-      description: "Need a server? Use code 'SAITHSFUFF' for 15% off every month at Kinetic Hosting!",
+      description:
+        "Need a server? Use code 'SAITHSFUFF' for 15% off every month at Kinetic Hosting!",
     },
     {
       name: "Pin-Ace",
       href: "https://pin-ace.com/SAITHSFUFF",
-      description: "Pride Pins! Use code 'SAITHSFUFF' for 15% off your entire order!",
+      description:
+        "Pride Pins! Use code 'SAITHSFUFF' for 15% off your entire order!",
     },
     {
       name: "Oodie",
@@ -138,9 +148,9 @@ describe("LinksPage heading hierarchy", () => {
     render(<LinksPage />);
     const h2s = screen.getAllByRole("heading", { level: 2 });
     expect(h2s.length).toBeGreaterThanOrEqual(2);
-    expect(
-      h2s.some((h) => /social media/i.test(h.textContent || ""))
-    ).toBe(true);
+    expect(h2s.some((h) => /social media/i.test(h.textContent || ""))).toBe(
+      true
+    );
     expect(
       h2s.some((h) => /partners & sponsors/i.test(h.textContent || ""))
     ).toBe(true);

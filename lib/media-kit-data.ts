@@ -48,9 +48,24 @@ export interface ContactInfo {
 
 /** Platform statistics — replace with real numbers */
 export const platformStats: PlatformStat[] = [
-  { platform: "Twitch", icon: "/images/links/twitch.png", followers: "18.4K", avgViews: "38" },
-  { platform: "Instagram", icon: "/images/links/instagram.png", followers: "56.6K", avgViews: "3.4K" },
-  { platform: "TikTok", icon: "/images/links/tiktok.png", followers: "70.5K", avgViews: "38" },
+  {
+    platform: "Twitch",
+    icon: "/images/links/twitch.png",
+    followers: "18.4K",
+    avgViews: "38",
+  },
+  {
+    platform: "Instagram",
+    icon: "/images/links/instagram.png",
+    followers: "56.6K",
+    avgViews: "3.4K",
+  },
+  {
+    platform: "TikTok",
+    icon: "/images/links/tiktok.png",
+    followers: "70.5K",
+    avgViews: "38",
+  },
 ];
 
 /** Age breakdown — replace with real analytics */
@@ -89,18 +104,38 @@ export const audienceInterests: string[] = [
   "Arts & Craft",
   "Technology",
   "Lifestyle",
-  "Blind Boxes"
+  "Blind Boxes",
 ];
 
 /** Brand collaborations — replace with real partners */
 export const brandCollaborations: BrandCollab[] = [
-  { name: "CyberPower PC", logo: "/images/logos/cyberpower.png", category: "Gaming" },
+  {
+    name: "CyberPower PC",
+    logo: "/images/logos/cyberpower.png",
+    category: "Gaming",
+  },
   { name: "AMD", logo: "/images/logos/amd.png", category: "Gaming" },
   { name: "Asus", logo: "/images/logos/asus.png", category: "Gaming" },
-  { name: "Charlotte Tilbury", logo: "/images/logos/charlotte-tilbury.png", category: "Beauty" },
-  { name: "Hyte", logo: "/images/logos/charlotte-tilbury.png", category: "Gaming" },
-  { name: "Nintendo", logo: "/images/logos/charlotte-tilbury.png", category: "Gaming" },
-  { name: "Minecraft", logo: "/images/logos/charlotte-tilbury.png", category: "Gaming" },
+  {
+    name: "Charlotte Tilbury",
+    logo: "/images/logos/charlotte-tilbury.png",
+    category: "Beauty",
+  },
+  {
+    name: "Hyte",
+    logo: "/images/logos/charlotte-tilbury.png",
+    category: "Gaming",
+  },
+  {
+    name: "Nintendo",
+    logo: "/images/logos/charlotte-tilbury.png",
+    category: "Gaming",
+  },
+  {
+    name: "Minecraft",
+    logo: "/images/logos/charlotte-tilbury.png",
+    category: "Gaming",
+  },
 ];
 
 /** Content examples — Instagram reels embedded via Instagram's embed script */
@@ -115,8 +150,20 @@ export const contentExamples: ContentExample[] = [
 export const contactInfo: ContactInfo = {
   email: "saithsfuff@gmail.com",
   socialLinks: [
-    { platform: "Twitch", url: "https://twitch.tv/saithsfuff", label: "twitch.tv/saithsfuff" },
-    { platform: "Instagram", url: "https://www.instagram.com/saithsfuff/", label: "instagram.com/saithsfuff/" },
-    { platform: "TikTok", url: "https://www.tiktok.com/@saithsfuff", label: "tiktok.com/@saithsfuff" },
+    {
+      platform: "Twitch",
+      url: "https://twitch.tv/saithsfuff",
+      label: "twitch.tv/saithsfuff",
+    },
+    {
+      platform: "Instagram",
+      url: "https://www.instagram.com/saithsfuff/",
+      label: "instagram.com/saithsfuff/",
+    },
+    {
+      platform: "TikTok",
+      url: "https://www.tiktok.com/@saithsfuff",
+      label: "tiktok.com/@saithsfuff",
+    },
   ],
 };

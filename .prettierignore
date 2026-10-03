@@ -1,0 +1,12 @@
+# Build output
+.next/
+out/
+# Dependencies
+node_modules/
+# Generated / vendored
+next-env.d.ts
+package-lock.json
+# Prisma generated client
+prisma/migrations/
+# Kiro project config (specs, steering, hooks)
+.kiro/
