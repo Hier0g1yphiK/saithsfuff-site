@@ -6,7 +6,6 @@ Personal website for **saithsfuff** — a content creator and Twitch streamer. A
 
 - **Next.js 14** (App Router) with React 18 and TypeScript
 - **Tailwind CSS 3.4** — custom pastel theme with light/dark mode
-- **PostgreSQL** via Prisma ORM (v7) with `@prisma/adapter-pg`
 - **Jest 30** + React Testing Library for unit tests
 
 ## Pages
@@ -32,7 +31,7 @@ app/                    # Next.js App Router pages
 └── smp/page.tsx        # SMP page
 
 components/             # React components by page/feature
-├── shared/             # NavBar, ThemeToggle, DecorativeStars, PasswordGate
+├── shared/             # NavBar, Footer, ThemeToggle, DecorativeStars, PasswordGate
 ├── home/               # HomeHero, TwitchSection, InstagramFeed, TikTokFeed
 ├── links/              # LinksHero, LinkCard, SocialLinksSection, PartnersSection
 ├── media-kit/          # MediaKitHero, PlatformStats, AudienceDemographics, etc.
@@ -46,7 +45,6 @@ lib/                    # Utilities and static data
 ├── media-kit-data.ts   # Media kit content
 └── smp-data.ts         # SMP page content
 
-prisma/                 # Database schema and migrations
 public/images/          # Static assets (logos, icons, partner images)
 __tests__/              # Tests mirroring components/ structure
 ```
@@ -56,7 +54,6 @@ __tests__/              # Tests mirroring components/ structure
 ### Prerequisites
 
 - Node.js 18+
-- PostgreSQL database (for the `SiteConfig` table)
 
 ### Setup
 
@@ -65,9 +62,6 @@ __tests__/              # Tests mirroring components/ structure
 npm install
 
 # Create a .env.local with your values (see Environment Variables below)
-
-# Run database migrations
-npx prisma migrate dev
 
 # Start dev server
 npm run dev
@@ -82,19 +76,16 @@ Create a `.env.local` file in the project root:
 | Variable                    | Description                              |
 | --------------------------- | ---------------------------------------- |
 | `NEXT_PUBLIC_SITE_PASSWORD` | Password for the client-side splash gate |
-| `DATABASE_URL`              | PostgreSQL connection string             |
 
 ## Scripts
 
-| Command                  | Purpose                  |
-| ------------------------ | ------------------------ |
-| `npm run dev`            | Start development server |
-| `npm run build`          | Production build         |
-| `npm run start`          | Start production server  |
-| `npm run lint`           | Run ESLint               |
-| `npm test`               | Run Jest tests           |
-| `npx prisma migrate dev` | Run database migrations  |
-| `npx prisma generate`    | Regenerate Prisma client |
+| Command         | Purpose                  |
+| --------------- | ------------------------ |
+| `npm run dev`   | Start development server |
+| `npm run build` | Production build         |
+| `npm run start` | Start production server  |
+| `npm run lint`  | Run ESLint               |
+| `npm test`      | Run Jest tests           |
 
 ## Social Feeds
 

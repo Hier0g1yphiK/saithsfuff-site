@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NavBar from "@/components/shared/NavBar";
+import Footer from "@/components/shared/Footer";
 import DecorativeStars from "@/components/shared/DecorativeStars";
 import MediaKitHero from "@/components/media-kit/MediaKitHero";
 import PlatformStats from "@/components/media-kit/PlatformStats";
@@ -44,9 +45,7 @@ export default function PortfolioPage() {
         <div className="sparkle-divider" />
         <ContentExamples />
       </main>
-      <footer className="py-8 text-center font-body text-sm text-text-body dark:text-gray-100">
-        <p>© 2026 saithsfuff. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

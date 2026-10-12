@@ -115,7 +115,7 @@ export default function TwitchSection() {
       <Script
         src={TWITCH_EMBED_SCRIPT}
         strategy="lazyOnload"
-        onLoad={handleScriptLoad}
+        onReady={handleScriptLoad}
         onError={handleScriptError}
       />
     </section>

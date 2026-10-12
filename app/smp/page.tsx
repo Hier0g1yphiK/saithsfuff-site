@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import DecorativeStars from "@/components/shared/DecorativeStars";
 import NavBar from "@/components/shared/NavBar";
+import Footer from "@/components/shared/Footer";
 import SmpHero from "@/components/smp/SmpHero";
 import WhitelistSection from "@/components/smp/WhitelistSection";
 import JavaSection from "@/components/smp/JavaSection";
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
  *
  * **Layout order:**
  * `DecorativeStars` → `NavBar` → `<main>` (SmpHero → WhitelistSection →
- * JavaSection → BedrockSection) → `<footer>`
+ * JavaSection → BedrockSection) → `Footer`
  *
  * This is a **React Server Component** (no `"use client"` directive).
  * The only client-side JS on this route comes from `ServerIpDisplay` inside
@@ -55,9 +56,7 @@ export default function SmpPage() {
           <BedrockSection />
         </div>
       </main>
-      <footer className="py-8 text-center font-body text-sm text-text-body dark:text-gray-100">
-        <p>© 2026 saithsfuff. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }
