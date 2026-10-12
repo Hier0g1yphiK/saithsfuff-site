@@ -42,6 +42,20 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Respect the OS "reduce motion" setting: stop decorative animations */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
 @layer components {

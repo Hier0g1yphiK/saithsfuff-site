@@ -127,6 +127,20 @@ describe("TwitchSection", () => {
       expect(scriptProps.src).toBe("https://embed.twitch.tv/embed/v1.js");
       expect(scriptProps.strategy).toBe("lazyOnload");
     });
+
+    it("initializes the embed via onReady so it re-runs on every mount", () => {
+      render(<TwitchSection />);
+      expect(scriptProps.onLoad).toBeUndefined();
+
+      act(() => {
+        (scriptProps.onReady as () => void)();
+      });
+
+      expect(mockEmbed).toHaveBeenCalledWith(
+        "twitch-embed",
+        expect.objectContaining({ channel: "saithsfuff" })
+      );
+    });
   });
 
   describe("fallback UI", () => {

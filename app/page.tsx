@@ -1,4 +1,5 @@
 import NavBar from "@/components/shared/NavBar";
+import Footer from "@/components/shared/Footer";
 import DecorativeStars from "@/components/shared/DecorativeStars";
 import HomeHero from "@/components/home/HomeHero";
 import TwitchSection from "@/components/home/TwitchSection";
@@ -8,7 +9,7 @@ import TikTokFeed from "@/components/home/TikTokFeed";
 /**
  * Homepage — the root route (`/`).
  *
- * Composes the standard page shell (DecorativeStars, NavBar, footer) with
+ * Composes the standard page shell (DecorativeStars, NavBar, Footer) with
  * content sections: hero, Twitch embed, Instagram feed, and TikTok feed.
  *
  * This is a React Server Component (no "use client" directive).
@@ -26,9 +27,7 @@ export default function Home() {
         <InstagramFeed />
         <TikTokFeed />
       </main>
-      <footer className="py-8 text-center font-body text-sm text-text-body dark:text-gray-100">
-        <p>© 2026 saithsfuff. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

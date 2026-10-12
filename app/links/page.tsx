@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import DecorativeStars from "@/components/shared/DecorativeStars";
 import NavBar from "@/components/shared/NavBar";
+import Footer from "@/components/shared/Footer";
 import LinksHero from "@/components/links/LinksHero";
 import SocialLinksSection from "@/components/links/SocialLinksSection";
 import PartnersSection from "@/components/links/PartnersSection";
 
 /** Page-level metadata for SEO and social sharing on the `/links` route. */
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Links | saithsfuff",
   description:
     "Find all of saithsfuff's social media profiles, partner links, and discount codes in one place.",
-};
+  path: "/links",
+});
 
 /**
  * Links page — the `/links` route.
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
  * in `lib/links-data.ts`.
  *
  * Layout: DecorativeStars → NavBar → LinksHero → SocialLinksSection →
- * PartnersSection → footer. Sections are separated by sparkle dividers.
+ * PartnersSection → Footer. Sections are separated by sparkle dividers.
  *
  * This is a React Server Component (no "use client" directive).
  *
@@ -40,9 +43,7 @@ export default function LinksPage() {
           <PartnersSection />
         </div>
       </main>
-      <footer className="py-8 text-center font-body text-sm text-text-body dark:text-gray-100">
-        <p>© 2026 saithsfuff. All rights reserved.</p>
-      </footer>
+      <Footer />
     </>
   );
 }
