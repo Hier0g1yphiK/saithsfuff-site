@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import DecorativeStars from "@/components/shared/DecorativeStars";
 import NavBar from "@/components/shared/NavBar";
 import Footer from "@/components/shared/Footer";
@@ -7,11 +8,12 @@ import SocialLinksSection from "@/components/links/SocialLinksSection";
 import PartnersSection from "@/components/links/PartnersSection";
 
 /** Page-level metadata for SEO and social sharing on the `/links` route. */
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Links | saithsfuff",
   description:
     "Find all of saithsfuff's social media profiles, partner links, and discount codes in one place.",
-};
+  path: "/links",
+});
 
 /**
  * Links page — the `/links` route.

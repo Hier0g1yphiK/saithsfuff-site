@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import NavBar from "@/components/shared/NavBar";
 import Footer from "@/components/shared/Footer";
 import DecorativeStars from "@/components/shared/DecorativeStars";
@@ -10,11 +11,12 @@ import ContentExamples from "@/components/media-kit/ContentExamples";
 import ContactCTA from "@/components/media-kit/ContactCTA";
 
 /** Page-level metadata for SEO and social sharing on the `/portfolio` route. */
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Portfolio & Media Kit | saithsfuff",
   description:
     "Explore saithsfuff's media kit — platform stats, audience demographics, brand collaborations, and content examples. Let's work together!",
-};
+  path: "/portfolio",
+});
 
 /**
  * Portfolio & Media Kit page — the `/portfolio` route.

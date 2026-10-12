@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
 import PasswordGate from "@/components/shared/PasswordGate";
+import { SITE_URL } from "@/lib/site";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -18,6 +19,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "saithsfuff | Streamer, Gamer & Cozy Content Creator",
   description:
     "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and lets hang out! ",
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     description:
       "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and lets hang out! ",
     type: "website",
-    url: "https://saithsfuff.com",
+    url: "/",
     siteName: "saithsfuff",
   },
   twitter: {

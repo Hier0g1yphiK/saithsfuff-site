@@ -88,9 +88,9 @@ export const genderDistribution: DemographicGender[] = [
 /** Top geographic locations — replace with real analytics */
 export const topLocations: DemographicLocation[] = [
   { country: "United States", percentage: 28.5 },
-  { country: "United Kingdom", percentage: 5.7 },
   { country: "Brazil", percentage: 10.9 },
   { country: "Mexico", percentage: 7.8 },
+  { country: "United Kingdom", percentage: 5.7 },
   { country: "Argentina", percentage: 3.5 },
 ];
 

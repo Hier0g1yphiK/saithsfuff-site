@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import DecorativeStars from "@/components/shared/DecorativeStars";
 import NavBar from "@/components/shared/NavBar";
 import Footer from "@/components/shared/Footer";
@@ -12,11 +13,12 @@ import BedrockSection from "@/components/smp/BedrockSection";
  *
  * @see https://nextjs.org/docs/app/api-reference/functions/generate-metadata
  */
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "SMP | saithsfuff",
   description:
     "Join the saithsfuff SMP — a cozy community Minecraft server. Get the IP address, connection instructions, and start playing today!",
-};
+  path: "/smp",
+});
 
 /**
  * SMP page — the `/smp` route.
