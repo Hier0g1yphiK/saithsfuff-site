@@ -123,7 +123,7 @@ export interface SmpPageData {
  */
 export const smpData: SmpPageData = {
   hero: {
-    serverName: "Saithsfuff SMP's",
+    serverName: "Saithsfuff SMPs",
     tagline:
       "A cozy community Minecraft server, with both Java and Bedrock players! A new modded Java SMP coming soon!",
   },

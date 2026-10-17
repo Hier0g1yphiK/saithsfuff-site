@@ -13,6 +13,7 @@ Personal website for **saithsfuff** — a content creator and Twitch streamer. A
 | Route        | Description                                                                          |
 | ------------ | ------------------------------------------------------------------------------------ |
 | `/`          | Homepage — hero, embedded Twitch player, Instagram & TikTok feeds (Curator.io)       |
+| `/schedule`  | Stream schedule — weekly stream times shown in the visitor's timezone                |
 | `/links`     | Link-in-bio page — social profiles and partner/sponsor discount codes                |
 | `/portfolio` | Media kit — platform stats, audience demographics, brand collaborations, contact CTA |
 | `/smp`       | Minecraft SMP — server info, Java & Bedrock connection guides, whitelist form        |
@@ -27,6 +28,7 @@ app/                    # Next.js App Router pages
 ├── page.tsx            # Homepage
 ├── globals.css         # Tailwind layers + custom classes
 ├── links/page.tsx      # Links page
+├── schedule/page.tsx   # Stream schedule page
 ├── portfolio/page.tsx  # Media Kit page
 └── smp/page.tsx        # SMP page
 
@@ -34,6 +36,7 @@ components/             # React components by page/feature
 ├── shared/             # NavBar, Footer, ThemeToggle, DecorativeStars, PasswordGate
 ├── home/               # HomeHero, TwitchSection, InstagramFeed, TikTokFeed
 ├── links/              # LinksHero, LinkCard, SocialLinksSection, PartnersSection
+├── schedule/           # ScheduleHero, StreamSchedule
 ├── media-kit/          # MediaKitHero, PlatformStats, AudienceDemographics, etc.
 ├── smp/                # SmpHero, ServerIpDisplay, JavaSection, BedrockSection, WhitelistSection
 └── splash/             # SplashPage, PasswordForm

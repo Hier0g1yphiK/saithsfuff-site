@@ -35,7 +35,8 @@ export default function HomeHero() {
         {/* Tagline */}
         <p className="mx-auto mt-4 max-w-2xl font-body text-lg text-text-body dark:text-gray-200 sm:text-xl">
           Streamer, content creator, and cozy community builder. Welcome to my
-          little corner of the internet, grab a snack and lets hang out! 💖
+          little corner of the internet, grab a snack and let&apos;s hang out!
+          💖
         </p>
       </div>
     </section>
