@@ -2,13 +2,30 @@
 
 import { useEffect, useState } from "react";
 
+/** localStorage can throw (blocked storage, some private modes). */
+function readTheme(): string | null {
+  try {
+    return localStorage.getItem("theme");
+  } catch {
+    return null;
+  }
+}
+
+function saveTheme(theme: "dark" | "light"): void {
+  try {
+    localStorage.setItem("theme", theme);
+  } catch {
+    // Storage unavailable — the choice just won't persist
+  }
+}
+
 export default function ThemeToggle() {
   const [dark, setDark] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    const stored = localStorage.getItem("theme");
+    const stored = readTheme();
     if (
       stored === "dark" ||
       (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)
@@ -23,10 +40,10 @@ export default function ThemeToggle() {
     setDark(next);
     if (next) {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      saveTheme("dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      saveTheme("light");
     }
   }
 

@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import Script from "next/script";
+import { useTwitchLive } from "@/lib/useTwitchLive";
 
 const TWITCH_CHANNEL = "saithsfuff";
 const TWITCH_CHANNEL_URL = "https://www.twitch.tv/saithsfuff";
@@ -24,6 +26,7 @@ export default function TwitchSection() {
     "loading"
   );
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const live = useTwitchLive();
 
   useEffect(() => {
     timeoutRef.current = setTimeout(() => {
@@ -76,9 +79,28 @@ export default function TwitchSection() {
 
   return (
     <section id="twitch" className="section-container">
-      <h2 className="font-display text-2xl font-semibold text-center sm:text-3xl mb-8">
+      <h2 className="font-display text-2xl font-semibold text-center sm:text-3xl mb-3">
         <span className="gradient-text">Watch on Twitch</span> 🎮
       </h2>
+
+      <p className="mb-8 text-center text-sm" aria-live="polite">
+        {live ? (
+          <span className="inline-flex items-center gap-2 rounded-pill bg-red-500 px-3 py-1 font-display font-semibold text-white">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-white" />
+            Live now, come hang out!
+          </span>
+        ) : (
+          <span className="text-text-muted dark:text-lavender-300">
+            Offline right now.{" "}
+            <Link
+              href="/schedule"
+              className="font-medium text-pink-500 hover:text-pink-600 dark:text-lavender-300 dark:hover:text-lavender-200"
+            >
+              See when I&apos;m next live →
+            </Link>
+          </span>
+        )}
+      </p>
 
       <div className="whimsical-card p-4 sm:p-6">
         {embedStatus === "error" ? (

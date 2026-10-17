@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "saithsfuff | Streamer, Gamer & Cozy Content Creator",
   description:
-    "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and lets hang out! ",
+    "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and let's hang out!",
 
   openGraph: {
     title: "saithsfuff | Streamer, Gamer & Cozy Content Creator",
     description:
-      "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and lets hang out! ",
+      "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and let's hang out!",
     type: "website",
     url: "/",
     siteName: "saithsfuff",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "saithsfuff | Streamer, Gamer & Cozy Content Creator",
     description:
-      "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and lets hang out! ",
+      "Streamer, content creator, and cozy community builder. Welcome to my little corner of the internet, grab a snack and let's hang out!",
   },
 };
 
@@ -56,7 +56,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                var theme = localStorage.getItem('theme');
+                var theme = null;
+                try { theme = localStorage.getItem('theme'); } catch (e) {}
                 if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                   document.documentElement.classList.add('dark');
                 }
